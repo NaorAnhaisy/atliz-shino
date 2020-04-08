@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/atliz-shino/static/css/main.f0d77edf.chunk.css",
+    "main.css": "/atliz-shino/static/css/main.225852e9.chunk.css",
     "main.js": "/atliz-shino/static/js/main.cd90a7bc.chunk.js",
     "main.js.map": "/atliz-shino/static/js/main.cd90a7bc.chunk.js.map",
     "runtime-main.js": "/atliz-shino/static/js/runtime-main.4c826b59.js",
@@ -9,10 +9,10 @@
     "static/js/2.f62cde36.chunk.js": "/atliz-shino/static/js/2.f62cde36.chunk.js",
     "static/js/2.f62cde36.chunk.js.map": "/atliz-shino/static/js/2.f62cde36.chunk.js.map",
     "index.html": "/atliz-shino/index.html",
-    "precache-manifest.d8cac55ce1e0d98b99407d35082dd17d.js": "/atliz-shino/precache-manifest.d8cac55ce1e0d98b99407d35082dd17d.js",
+    "precache-manifest.08d8f4e9da86d58477bfb9c048c3240b.js": "/atliz-shino/precache-manifest.08d8f4e9da86d58477bfb9c048c3240b.js",
     "service-worker.js": "/atliz-shino/service-worker.js",
     "static/css/2.b1359ecf.chunk.css.map": "/atliz-shino/static/css/2.b1359ecf.chunk.css.map",
-    "static/css/main.f0d77edf.chunk.css.map": "/atliz-shino/static/css/main.f0d77edf.chunk.css.map",
+    "static/css/main.225852e9.chunk.css.map": "/atliz-shino/static/css/main.225852e9.chunk.css.map",
     "static/js/2.f62cde36.chunk.js.LICENSE.txt": "/atliz-shino/static/js/2.f62cde36.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/atliz-shino/static/media/slick.f97e3bbf.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.4c826b59.js",
     "static/css/2.b1359ecf.chunk.css",
     "static/js/2.f62cde36.chunk.js",
-    "static/css/main.f0d77edf.chunk.css",
+    "static/css/main.225852e9.chunk.css",
     "static/js/main.cd90a7bc.chunk.js"
   ]
 }
