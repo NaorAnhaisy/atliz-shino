@@ -21,10 +21,10 @@ export function getBeef() {
             price: 120,
             kosher: "הרב מחפוד",
             isHot: false,
-            imageUrl: "https://www.ynet.co.il/PicServer2/13062011/3308701/16_wa.jpg"
+            imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Picanha3.jpg"
         },
         {
-            name: "פיקאניה",
+            name: "סינטה",
             price: 120,
             kosher: "הרב מחפוד",
             isHot: false,
@@ -45,7 +45,7 @@ export function getBeef() {
             imageUrl: "https://www.easyrecipes.co.il/wp-content/uploads/2015/01/%D7%91%D7%A9%D7%A8-%D7%91%D7%A7%D7%A8-%D7%98%D7%97%D7%95%D7%9F-%D7%9C%D7%94%D7%9E%D7%91%D7%95%D7%A8%D7%92%D7%A8-660x437.jpg"
         },
         {
-            name: "מוח בקר",
+            name: "מוח בקר קפוא",
             price: 55,
             kosher: "הרב מחפוד",
             isHot: false,

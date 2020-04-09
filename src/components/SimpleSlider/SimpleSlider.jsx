@@ -60,7 +60,7 @@ export default class SimpleSlider extends Component {
             <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
             { item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
           </div>
-          <h3>{item.name} - ₪ {item.price} לק"ג</h3>
+          <h4>{item.name} - ₪ {item.price} לק"ג</h4>
         </div>
         )
     });
@@ -76,15 +76,12 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 2,
     };
 
-    let itemName = this.props.type.charAt(0).toUpperCase() + this.props.type.slice(1);
-
     return (
 
       <div className="slide-div">
-
         <h1 className="headerItems">
+          <span className="item-name">{this.props.itemName}</span>
           <img className="header-icon" src={'/atliz-shino/images/' + this.props.type + '.png'} alt="headerIcon" />
-          <span className="item-name">{itemName}</span>
         </h1>
         <br />
         <Slider {...settings}>

@@ -1,0 +1,17 @@
+.gallery-div {
+}
+
+.card {
+    max-width: 27vw;
+    min-width: 27vw;
+}
+
+.card-title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.card-text {
+    text-align: right;
+    font-size: large;
+}

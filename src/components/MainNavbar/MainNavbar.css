@@ -22,3 +22,11 @@
       width: max-content;
     }
 }
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
