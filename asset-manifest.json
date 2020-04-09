@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/atliz-shino/static/css/main.225852e9.chunk.css",
-    "main.js": "/atliz-shino/static/js/main.cd90a7bc.chunk.js",
-    "main.js.map": "/atliz-shino/static/js/main.cd90a7bc.chunk.js.map",
-    "runtime-main.js": "/atliz-shino/static/js/runtime-main.4c826b59.js",
-    "runtime-main.js.map": "/atliz-shino/static/js/runtime-main.4c826b59.js.map",
+    "main.css": "/atliz-shino/static/css/main.d6fb9fb5.chunk.css",
+    "main.js": "/atliz-shino/static/js/main.b8fab138.chunk.js",
+    "main.js.map": "/atliz-shino/static/js/main.b8fab138.chunk.js.map",
+    "runtime-main.js": "/atliz-shino/static/js/runtime-main.c74ede82.js",
+    "runtime-main.js.map": "/atliz-shino/static/js/runtime-main.c74ede82.js.map",
     "static/css/2.b1359ecf.chunk.css": "/atliz-shino/static/css/2.b1359ecf.chunk.css",
-    "static/js/2.f62cde36.chunk.js": "/atliz-shino/static/js/2.f62cde36.chunk.js",
-    "static/js/2.f62cde36.chunk.js.map": "/atliz-shino/static/js/2.f62cde36.chunk.js.map",
+    "static/js/2.b5a7f333.chunk.js": "/atliz-shino/static/js/2.b5a7f333.chunk.js",
+    "static/js/2.b5a7f333.chunk.js.map": "/atliz-shino/static/js/2.b5a7f333.chunk.js.map",
     "index.html": "/atliz-shino/index.html",
-    "precache-manifest.08d8f4e9da86d58477bfb9c048c3240b.js": "/atliz-shino/precache-manifest.08d8f4e9da86d58477bfb9c048c3240b.js",
+    "precache-manifest.e8343ea709cd8605d7969781562184d0.js": "/atliz-shino/precache-manifest.e8343ea709cd8605d7969781562184d0.js",
     "service-worker.js": "/atliz-shino/service-worker.js",
     "static/css/2.b1359ecf.chunk.css.map": "/atliz-shino/static/css/2.b1359ecf.chunk.css.map",
-    "static/css/main.225852e9.chunk.css.map": "/atliz-shino/static/css/main.225852e9.chunk.css.map",
-    "static/js/2.f62cde36.chunk.js.LICENSE.txt": "/atliz-shino/static/js/2.f62cde36.chunk.js.LICENSE.txt",
+    "static/css/main.d6fb9fb5.chunk.css.map": "/atliz-shino/static/css/main.d6fb9fb5.chunk.css.map",
+    "static/js/2.b5a7f333.chunk.js.LICENSE.txt": "/atliz-shino/static/js/2.b5a7f333.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/atliz-shino/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4c826b59.js",
+    "static/js/runtime-main.c74ede82.js",
     "static/css/2.b1359ecf.chunk.css",
-    "static/js/2.f62cde36.chunk.js",
-    "static/css/main.225852e9.chunk.css",
-    "static/js/main.cd90a7bc.chunk.js"
+    "static/js/2.b5a7f333.chunk.js",
+    "static/css/main.d6fb9fb5.chunk.css",
+    "static/js/main.b8fab138.chunk.js"
   ]
 }
