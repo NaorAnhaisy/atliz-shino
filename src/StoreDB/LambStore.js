@@ -1,7 +1,7 @@
-export function getLamp() {
-    let lamp = [];
+export function getLamb() {
+    let lamb = [];
 
-    lamp.push(
+    lamb.push(
         {
             name: "שומן כבש",
             price: 160,
@@ -9,17 +9,17 @@ export function getLamp() {
         },
         {
             name: "צלעות כבש",
-            price: 120,
+            price: 200,
             imageUrl: "https://kazaviabashuk.com/wp-content/uploads/2019/11/%D7%9B%D7%91%D7%A9.jpeg"
         },
         {
             name: "צלעות טלה",
-            price: 90,
+            price: 210,
             imageUrl: "https://cdn-cms.f-static.net/uploads/1236014/800_5b45d10429a1a.jpg"
         },
         {
             name: "כתף כבש",
-            price: 55,
+            price: 60,
             imageUrl: "https://lh3.googleusercontent.com/proxy/cLgcVb1Ogbwmr49iWKfraE0_tqmtBI65gkYuwYOy63QsvmWSyhU0pnDzHlCZEvrnmz-FIfL1hQ5mEhjNNGVJf4PEBpoo37HN6RPcpLhsJlxhID1RyeE7CVkJKAU"
         },
         {
@@ -29,5 +29,5 @@ export function getLamp() {
         }
     )
 
-    return lamp
+    return lamb
 }

@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         <SimpleSlider className="content" type="beef"/>
         <br />
-        <SimpleSlider className="content" type="lamp"/>
+        <SimpleSlider className="content" type="lamb"/>
         <br />
         <SimpleSlider className="content" type="chicken"/>
         <br />

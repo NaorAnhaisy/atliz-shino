@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { getBeef } from '../../StoreDB/BeefStore.js'
-import { getLamp } from '../../StoreDB/LampStore.js'
+import { getLamb } from '../../StoreDB/LambStore.js'
 import { getChicken } from '../../StoreDB/ChickenStore.js'
 import { getBarbecue } from '../../StoreDB/BarbecueStore.js'
 import ModalItem from '../ModalItem/ModalItem'
@@ -30,8 +30,8 @@ export default class SimpleSlider extends Component {
       case "beef":
         itemsArray = getBeef()
         break;
-      case "lamp":
-        itemsArray = getLamp()
+      case "lamb":
+        itemsArray = getLamb()
         break;
       case "chicken":
         itemsArray = getChicken()
@@ -56,6 +56,7 @@ export default class SimpleSlider extends Component {
         <div key={i} className="item-div">
           <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
           <h3>{item.name}</h3>
+          <h4>₪ {item.price}</h4>
         </div>)
     });
 
