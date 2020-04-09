@@ -6,20 +6,36 @@
     margin-top: 3vh;
 }
 
+.images-div {
+    position: relative;
+    display: inline-flex;
+}
+
 .item-image {
+    position: relative;
     width: 25vw;
     height: 20vw;
+    max-width: 25vw;
+    max-height: 20vw;
+}
+
+.pepper-image {
+    position: absolute;
+    max-width: 6vw;
+    max-height: 6vw;
+    bottom: 0;
+    left: 3px;
 }
 
 .item-div:hover {
     animation: changeColor 0.5s forwards;
 }
 
-.item-div:hover > img  {
+.images-div:hover > .item-image {
     animation: changeSize 0.5s forwards;
 }
 
-.item-div:not( :hover ) > img  {
+.images-div:not( :hover ) > .item-image {
     animation: changeSizeOut 0.5s forwards;
 }
 
@@ -29,13 +45,13 @@
 }
 
 @keyframes changeSize {
-    from { width: 25vw; height: 20vw;}
-    to { width: 28vw; height: 22vw;}
+    from { max-width: 25vw; max-height: 20vw; width: 25vw; height: 20vw;}
+    to { max-width: 28vw; max-height: 22vw; width: 28vw; height: 22vw;}
 }
 
 @keyframes changeSizeOut {
-    from { width: 28vw; height: 22vw;}
-    to { width: 25vw; height: 20vw;}
+    from { max-width: 28vw; max-height: 22vw; width: 28vw; height: 22vw;}
+    to { max-width: 25vw; max-height: 20vw; width: 25vw; height: 20vw;}
 }
 
 .slick-prev:before, .slick-next:before {

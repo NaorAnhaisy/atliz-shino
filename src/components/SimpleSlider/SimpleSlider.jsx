@@ -52,12 +52,18 @@ export default class SimpleSlider extends Component {
     let itemsArray = this.getItemsArrayByType(type)
 
     itemsArray.forEach((item, i) => {
-      slides.push(
+
+      slides.push
+      (
         <div key={i} className="item-div">
-          <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
+          <div className="images-div">
+            <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
+            { item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
+          </div>
           <h3>{item.name}</h3>
           <h4>₪ {item.price}</h4>
-        </div>)
+        </div>
+        )
     });
 
     return slides;

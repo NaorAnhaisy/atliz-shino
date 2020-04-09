@@ -5,3 +5,7 @@
 .modal-body {
     text-align: right;
 }
+
+.property-header {
+    font-weight: bold;
+}
