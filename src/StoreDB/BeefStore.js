@@ -6,7 +6,7 @@ export function getBeef() {
             name: "אנטריקוט",
             price: 160,
             kosher: "הרב מחפוד",
-            isHot: true,
+            isHot: false,
             imageUrl: "https://d3m9l0v76dty0.cloudfront.net/system/photos/4228157/large/2ef8410d6937ae8b396bfb75d8741fd3.jpg"
         },
         {

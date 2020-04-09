@@ -60,8 +60,7 @@ export default class SimpleSlider extends Component {
             <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
             { item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
           </div>
-          <h3>{item.name}</h3>
-          <h4>₪ {item.price}</h4>
+          <h3>{item.name} - ₪ {item.price} לק"ג</h3>
         </div>
         )
     });

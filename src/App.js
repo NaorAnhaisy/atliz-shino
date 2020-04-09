@@ -2,7 +2,9 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MainNavbar from './components/MainNavbar/MainNavbar'
-import SimpleSlider from './components/SimpleSlider/SimpleSlider'
+import About from './components/About/About'
+import Meats from './components/Meats/Meats'
+import { Route, Switch } from "react-router-dom";
 
 function App() {
 
@@ -10,13 +12,10 @@ function App() {
     <div className="App">
       <MainNavbar />
       <div className="container">
-        <SimpleSlider className="content" type="beef"/>
-        <br />
-        <SimpleSlider className="content" type="lamb"/>
-        <br />
-        <SimpleSlider className="content" type="chicken"/>
-        <br />
-        <SimpleSlider className="content" type="barbecue"/>
+        <Switch>
+          <Route path="/" component={Meats} exact></Route>
+          <Route path="/about" component={About}></Route>
+        </Switch>
       </div>
     </div>
   );

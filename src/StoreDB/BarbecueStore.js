@@ -3,7 +3,7 @@ export function getBarbecue() {
 
     meats.push(
         {
-            name: "קבב עם שומן כבש",
+            name: "קבב ביתי - בשר טחון ושומן כבש",
             price: 65,
             kosher: "הרב מחפוד",
             isHot: false,
@@ -17,11 +17,11 @@ export function getBarbecue() {
             imageUrl: "https://lh3.googleusercontent.com/proxy/CZ6senX_CQe9KUV-mU02XHl7q4MNuFVj8cvL3WD5DgCGsi4d4KnKJjsKPx4NpA5pE4UYX_Fq6DaCEQqMzNYMhx64TxZA"
         },
         {
-            name: "המבורגר",
+            name: "המבורגר ביתי - בשר טחון וכבש",
             price: 60,
             kosher: "הרב מחפוד",
             isHot: false,
-            imageUrl: "https://comps.canstockphoto.co.il/%D7%94%D7%9E%D7%91%D7%95%D7%A8%D7%92%D7%A8-%D7%A4%D7%98%D7%99%D7%95%D7%AA-%D7%A4%D7%98%D7%A8%D7%95%D7%96%D7%99%D7%9C%D7%99%D7%94-%D7%94%D7%A6%D7%99%D7%99%D7%9F-%D7%9C%D7%90-%D7%A6%D7%99%D7%9C%D7%95%D7%9D-%D7%A1%D7%98%D7%95%D7%A7_csp43499849.jpg"
+            imageUrl: "https://budelladoc.it/wp-content/uploads/2019/07/0016-000-1066.jpeg"
         },
         {
             name: "טחול ממולא",
