@@ -1,0 +1,58 @@
+.slide-div {
+    color: black;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    margin-top: 3vh;
+}
+
+.item-image {
+    width: 25vw;
+    height: 20vw;
+}
+
+.item-div:hover {
+    animation: changeColor 0.5s forwards;
+}
+
+.item-div:hover > img  {
+    animation: changeSize 0.5s forwards;
+}
+
+@keyframes changeColor {
+    from {color: black;}
+    to {color: gold;}
+}
+
+@keyframes changeSize {
+    from { width: 25vw; height: 20vw;}
+    to { width: 28vw; height: 22vw;}
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+    color: rgba(255, 50, 20) !important;
+}
+
+.slick-prev {
+    left: -35px !important;
+}
+
+.headerItems {
+    background-color: rgba(255, 50, 20, 0.8);
+    color: black;
+    font-weight: bold;
+}
+
+.header-icon {
+    width: 5vw;
+}
+
+.item-name {
+    font-family: cursive;
+    margin-right: 10px;
+}
+
+.slick-slide img {
+    display: inline-block !important;
+}

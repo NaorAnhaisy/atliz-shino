@@ -1,0 +1,18 @@
+.navbar-brand {
+    margin-left: 3vw;
+    font-size: x-large;
+    color: bisque !important;
+    font-weight: bold;
+}
+
+.mr-auto-left {
+    margin-left: auto;
+}
+
+.nav-link {
+    font-size: larger;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: .7rem;
+}
