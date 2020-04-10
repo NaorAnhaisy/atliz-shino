@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/atliz-shino/precache-manifest.2ac32b396d37a558e55e3869913ea0f3.js"
+  "/atliz-shino/precache-manifest.739f3b18023cba94bf399bf097e67bd2.js"
 );
 
 self.addEventListener('message', (event) => {
