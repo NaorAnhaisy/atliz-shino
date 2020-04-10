@@ -46,6 +46,7 @@
     text-align: right;
     font-size: large;
     height: 80px;
+    font-weight: bold;
 }
 
 .card-img, .card-img-top {
@@ -54,4 +55,26 @@
 
 .prop-header {
     font-weight: bold;
-} 
+}
+
+.card {
+    color: black;
+}
+
+.card:hover {
+    animation: changeColorIn 0.3s forwards;
+}
+
+.card:not(hover) {
+    animation: changeColorOut 0.3s forwards;
+}
+
+@keyframes changeColorIn {
+    from { color: black; }
+    to { color: brown; }
+}
+
+@keyframes changeColorOut {
+    from { color: brown; }
+    to { color: black; }
+}

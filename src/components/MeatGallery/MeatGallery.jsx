@@ -8,7 +8,7 @@ class MeatGallery extends Component {
         let cardItem =
             <div key={item.name} className="col mb-4">
                 <Card>
-                    <Card.Title>{item.name}</Card.Title>
+                    <div className="card-title h2">{item.name}</div>
                     <Card.Img variant="top" className="card-img-top" src={item.imageUrl} alt="..." />
                     <Card.Body>
                         <Card.Text>
@@ -43,7 +43,7 @@ class MeatGallery extends Component {
         return (
             <>
                 <div className="container">
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
                         {this.createHTMLItems(this.props.items)}
                     </div>
                 </div>
