@@ -40,6 +40,7 @@
     text-align: center;
     height: 80px;
     background-color: aliceblue;
+    border-radius: 30px;
 }
 
 .card-text {
@@ -59,6 +60,7 @@
 
 .card {
     color: black;
+    border-radius: 30px;
 }
 
 .card:hover {
