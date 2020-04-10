@@ -1,42 +1,26 @@
-.card-deck {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
+@media (max-width: 576px) {  
+    .xs {color:red;font-weight:bold;}
+  }
+  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {  
+    .sm {color:red;font-weight:bold;}
 }
-
-.card {
-    max-width: 243px
+   
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width:992px) {  
+    .md {color:red;font-weight:bold;}
 }
-
-/* @media only screen and (min-width: 1300px) {
-    .card {
-        max-width: 25vw
-    }
+   
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1200px) { 
+    .lg {color:red;font-weight:bold;}
 }
-
-@media only screen and (max-width: 1300px) {
-    .card {
-        max-width: 30vw
-    }
-} */
-
-/* @media only screen and (max-width: 1000px) {
-    .card {
-        max-width: 40vw
-    }
+   
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .xl {color:red;font-weight:bold;}
 }
-
-@media only screen and (max-width: 800px) {
-    .card {
-        max-width: 70vw
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .card {
-        max-width: 80vw
-    }
-} */
 
 .no-items-found-error {
     text-align: center;
@@ -54,24 +38,20 @@
 
 .card-title {
     text-align: center;
-    font-size: xx-large;
+    height: 80px;
+    background-color: aliceblue;
 }
 
 .card-text {
     text-align: right;
     font-size: large;
+    height: 80px;
 }
 
 .card-img, .card-img-top {
     height: 220px;
 }
 
-.meat-gallery-add-to-cart-button {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-}
-
 .prop-header {
     font-weight: bold;
-}
+} 

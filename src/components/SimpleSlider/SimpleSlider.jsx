@@ -11,12 +11,14 @@ import ModalItem from '../ModalItem/ModalItem'
 
 export default class SimpleSlider extends Component {
 
-  state = {
-    slideSelected: null
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      slideSelected: null
+    }
+  }
 
   handleSlideClick = (meat) => {
-    console.log(meat)
     this.setState({ slideSelected: meat })
   }
 
@@ -54,14 +56,14 @@ export default class SimpleSlider extends Component {
     itemsArray.forEach((item, i) => {
 
       slides.push
-      (
-        <div key={i} className="item-div">
-          <div className="images-div">
-            <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
-            { item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
+        (
+          <div key={i} className="item-div">
+            <div className="images-div">
+              <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
+              {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
+            </div>
+            <h4>{item.name} - ₪ {item.price} לק"ג</h4>
           </div>
-          <h4>{item.name} - ₪ {item.price} לק"ג</h4>
-        </div>
         )
     });
 
