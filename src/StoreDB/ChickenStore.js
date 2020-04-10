@@ -24,6 +24,27 @@ export function getChicken() {
             imageUrl: "https://img.mako.co.il/2016/06/23/shutterstock_283465517_i.jpg"
         },
         {
+            name: "חזה מולרד אווז קפוא",
+            price: 150,
+            kosher: "הרבנות הראשית",
+            isHot: false,
+            imageUrl: "https://www.hakatzav.co.il/wp-content/uploads/2018/04/DSC_0711.jpg"
+        },
+        {
+            name: "כבד אווז קפוא",
+            price: 300,
+            kosher: "הרבנות הראשית",
+            isHot: false,
+            imageUrl: "https://www.meat-sharabi.co.il/img/images/Products/chicken/Goose/%D7%9B%D7%91%D7%93-%D7%90%D7%95%D7%95%D7%96.jpg"
+        },
+        {
+            name: "שוק אווז קפוא",
+            price: 100,
+            kosher: "הרבנות הראשית",
+            isHot: false,
+            imageUrl: "https://www.meat-sharabi.co.il/img/images/Products/chicken/Goose/%D7%A9%D7%95%D7%A7-%D7%90%D7%95%D7%95%D7%96-%D7%A7%D7%A4%D7%95%D7%90.jpg"
+        },
+        {
             name: "חזה הודו",
             price: 50,
             kosher: "הרב מחפוד",

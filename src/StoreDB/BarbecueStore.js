@@ -14,7 +14,7 @@ export function getBarbecue() {
             price: 60,
             kosher: "הרב מחפוד",
             isHot: true,
-            imageUrl: "https://lh3.googleusercontent.com/proxy/CZ6senX_CQe9KUV-mU02XHl7q4MNuFVj8cvL3WD5DgCGsi4d4KnKJjsKPx4NpA5pE4UYX_Fq6DaCEQqMzNYMhx64TxZA"
+            imageUrl: "https://d3m9l0v76dty0.cloudfront.net/system/photos/3966060/large/6d86c57f87273004a4111f41f71f4ad9.jpg"
         },
         {
             name: "המבורגר ביתי - בשר טחון וכבש",

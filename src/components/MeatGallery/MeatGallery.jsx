@@ -1,52 +1,52 @@
 import React, { Component } from 'react';
 import './MeatGallery.css';
-import { CardDeck, Card, Button } from 'react-bootstrap';
+import { CardDeck, Card } from 'react-bootstrap';
 
-const ITEMS_IN_ROW = 4;
 class MeatGallery extends Component {
 
-    createCardItem = () => {
+    createCardItem = (item) => {
         let cardItem =
-            <Card>
-                <Card.Img variant="top" src="https://d3m9l0v76dty0.cloudfront.net/system/photos/3480348/large/b554bddc6f4f2065870e0118fee3bbd7.jpg" />
+            <Card key={item.name}>
+                <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body>
-                    <Card.Title>בשר ראש</Card.Title>
+                    <Card.Title>{item.name}</Card.Title>
                     <Card.Text>
-                        <span>כשרות: בד"צ</span>
+                        <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
                         <br />
-                        <span>מחיר לקילו: 55 ש"ח</span>
+                        <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span>
                     </Card.Text>
-                    <Button variant="success">הוסף לסל</Button>
+                    <br/>
+                    {/* <Button className="meat-gallery-add-to-cart-button" variant="success">הוסף לסל</Button> */}
                 </Card.Body>
             </Card>
         return cardItem
     }
 
-    createHTMLItems2 = (items) => {
-    }
+    createHTMLItems = (items) => {
+        let listItems = [];
+        items.forEach(item => {
+            listItems.push(this.createCardItem(item));
+        });
 
-    createHTMLItems = () => {
-        let i =
-        <>
+        let htmlItem =
             <CardDeck>
-                {this.createCardItem()}
-                {this.createCardItem()}
-                {this.createCardItem()}
-                {this.createCardItem()}
+                {listItems}
             </CardDeck>
-            <CardDeck>
-                {this.createCardItem()}
-                {this.createCardItem()}
-                {this.createCardItem()}
-            </CardDeck>
-            </>
-        return i
+
+        if (htmlItem.props.children.length === 0) {
+            htmlItem = 
+            <h1 className="no-items-found-error">
+                <img className="no-items-found-image" src="/atliz-shino/images/warning.png" alt="warning"/>
+                <span> לא נמצאו פריטים תואמים</span>
+            </h1>
+        }
+        return htmlItem
     }
 
     render() {
         return (
             <div className="gallery-div">
-                {this.createHTMLItems()}
+                {this.createHTMLItems(this.props.items)}
             </div>
         )
     }

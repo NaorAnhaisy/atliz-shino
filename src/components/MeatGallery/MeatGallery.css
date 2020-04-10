@@ -1,9 +1,55 @@
-.gallery-div {
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
 }
 
 .card {
-    max-width: 27vw;
-    min-width: 27vw;
+    max-width: 243px
+}
+
+/* @media only screen and (min-width: 1300px) {
+    .card {
+        max-width: 25vw
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .card {
+        max-width: 30vw
+    }
+} */
+
+/* @media only screen and (max-width: 1000px) {
+    .card {
+        max-width: 40vw
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        max-width: 70vw
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        max-width: 80vw
+    }
+} */
+
+.no-items-found-error {
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: rgb(97, 7, 7, 0.8);
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+}
+
+.no-items-found-image {
+    width: 3vw;
 }
 
 .card-title {
@@ -14,4 +60,18 @@
 .card-text {
     text-align: right;
     font-size: large;
+}
+
+.card-img, .card-img-top {
+    height: 220px;
+}
+
+.meat-gallery-add-to-cart-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.prop-header {
+    font-weight: bold;
 }
