@@ -71,11 +71,12 @@
 }
 
 .header-icon {
-    width: 5vw;
+    width: 3rem;
+    margin: 4px;
 }
 
 .item-name {
-    font-family: cursive;
+    /* font-family: cursive; */
     margin-right: 10px;
 }
 

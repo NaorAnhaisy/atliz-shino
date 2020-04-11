@@ -14,7 +14,7 @@ class MeatGallery extends Component {
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
                             <br />
-                            <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span>
+                            {/* <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span> */}
                         </Card.Text>
                     </Card.Body>
                 </Card>

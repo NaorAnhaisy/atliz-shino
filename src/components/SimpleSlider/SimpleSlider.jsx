@@ -3,10 +3,6 @@ import './SimpleSlider.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { getBeef } from '../../StoreDB/BeefStore.js'
-import { getLamb } from '../../StoreDB/LambStore.js'
-import { getChicken } from '../../StoreDB/ChickenStore.js'
-import { getBarbecue } from '../../StoreDB/BarbecueStore.js'
 import ModalItem from '../ModalItem/ModalItem'
 
 export default class SimpleSlider extends Component {
@@ -26,35 +22,9 @@ export default class SimpleSlider extends Component {
     this.setState({ slideSelected: null })
   }
 
-  getItemsArrayByType = (type) => {
-    let itemsArray = null;
-    switch (type) {
-      case "beef":
-        itemsArray = getBeef()
-        break;
-      case "lamb":
-        itemsArray = getLamb()
-        break;
-      case "chicken":
-        itemsArray = getChicken()
-        break;
-      case "barbecue":
-        itemsArray = getBarbecue()
-        break;
-      default:
-        alert("No valid array for that type: " + type)
-        break;
-    }
-
-    return itemsArray
-  }
-
-  createSlides = (type) => {
+  createSlides = (itemsArray) => {
     let slides = [];
-    let itemsArray = this.getItemsArrayByType(type)
-
     itemsArray.forEach((item, i) => {
-
       slides.push
         (
           <div key={i} className="item-div">
@@ -62,7 +32,8 @@ export default class SimpleSlider extends Component {
               <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
               {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
             </div>
-            <h4>{item.name} - ₪ {item.price} לק"ג</h4>
+            <h4>{item.name}</h4>
+            {/* <h4>{item.name} - ₪ {item.price} לק"ג</h4> */}
           </div>
         )
     });
@@ -82,12 +53,12 @@ export default class SimpleSlider extends Component {
 
       <div className="slide-div">
         <h1 className="headerItems">
-          <span className="item-name">{this.props.itemName}</span>
-          <img className="header-icon" src={'/atliz-shino/images/' + this.props.type + '.png'} alt="headerIcon" />
+          <span className="item-name">{this.props.product.itemName}</span>
+          <img className="header-icon" src={'/atliz-shino/images/' + this.props.product.type + '.png'} alt="headerIcon" />
         </h1>
         <br />
         <Slider {...settings}>
-          {this.createSlides(this.props.type)}
+          {this.createSlides(this.props.product.getItems())}
         </Slider>
 
         {this.state.slideSelected && <ModalItem item={this.state.slideSelected} cancelSelected={this.cancelSelected} />}

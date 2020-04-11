@@ -2,6 +2,7 @@
     margin-left: 3vw;
     font-weight: bold;
     color: gold !important;
+    font-size: x-large;
 }
 
 .mr-auto-left {
@@ -32,4 +33,4 @@
 
 .navbar-nav .nav-link:hover {
     text-decoration: underline;
-} 
+}

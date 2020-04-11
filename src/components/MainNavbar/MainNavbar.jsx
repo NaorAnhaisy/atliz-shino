@@ -41,7 +41,7 @@ class MainNavbar extends Component {
   render() {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
-          <Navbar.Brand as={Link} to="/atliz-shino" onClick={this.initText}>אטליז שינו ובניו - מרכז הבשר החלק</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/atliz-shino" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto-left">

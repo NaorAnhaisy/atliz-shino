@@ -5,12 +5,11 @@ class Contant extends Component {
 
     render() {
       return (
-        <div className="about-container container">
+        <div className="about-container">
           <h1>בשר ישראלי טרי ואיכותי במשלוח מהיר עד הבית</h1>
           <h2> המשלוח מגיע טרי, ארוז היטב ומאפשר לכם ליהנות מבשר איכותי במחירים הוגנים.</h2>
           <h3>משלוחים חינם !</h3>
 
-          <br/>
           <div className="contact-content-div">
             <p>
                 <span>אזורי משלוח: ראשון לציון, חולון, בת ים</span>
@@ -19,9 +18,9 @@ class Contant extends Component {
                 <br/>
                 <span>* את ההזמנות ניתן לבצע טלפונית או בבבית העסק עצמו, ולבקש שיגיע עד לפתח דלתכם *</span>
             </p>
-            <p>
-                <div>רחוב ירושלים 40</div>
-                <div>בת ים</div>
+            <p className="address">
+                <span>רחוב ירושלים 40</span>
+                <span>בת ים</span>
             </p>
             <p>
                 טלפון העסק: 03-6585484 

@@ -1,22 +1,17 @@
 import React, { Component } from 'react';
 import './Meats.css';
 import SimpleSlider from '../SimpleSlider/SimpleSlider'
-
-var meatItems = [
-    { itemName: "בקר", type: "beef" },
-    { itemName: "עופות", type: "lamb" },
-    { itemName: "כבש", type: "chicken" },
-    { itemName: "על האש", type: "barbecue" }
-]
+import { getAllProducts } from '../../StoreDB/Store.js'
 
 class Meats extends Component {
 
     createMeatSliders = () => {
         let slidersElements = []
-        meatItems.forEach((meatItem, i) => {
+        getAllProducts().filter(product => product.general === "meat")
+            .forEach((product, i) => {
             slidersElements.push(
                 <div key={i}>
-                    <SimpleSlider className="content" itemName={meatItem.itemName} type={meatItem.type} />
+                    <SimpleSlider className="content" product={product} />
                     <br />
                 </div>
             )
@@ -28,7 +23,6 @@ class Meats extends Component {
     render() {
         return (
             <div>
-                <h3 className="meats-header">טעימה מהבשרים שלנו ...</h3>
                 {this.createMeatSliders()}
             </div>
         )

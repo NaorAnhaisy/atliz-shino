@@ -1,9 +1,13 @@
 .contact-content-div {
     font-size: larger;
-    padding: 8px;
+    padding: 18px;
 }
 
 .end-contact {
     font-size: larger;
     text-decoration: underline;
+}
+
+.address {
+    display: inline-grid;
 }
