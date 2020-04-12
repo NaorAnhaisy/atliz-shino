@@ -25,9 +25,14 @@ function App() {
     <div className="App">
       <MainNavbar setSearchText={setSearchText} />
       <Container>
-        <div className="sorry-div">
-          <h1>שלום רב לכולם. האתר עוד בבנייה, והמוצרים בו אינם אמיתיים.</h1>
-          <h3>עימכם הסליחה ותודה על ההבנה :)</h3>
+        <div className="kosher-div">
+          <h1 style={{textDecoration: "underline"}}>אטליז שינו ובניו - מרכז הבשר החלק</h1>
+          <br />
+          <h2>כשרויות מהודרות בהשגחת הרב מחפוד יורה דעה, עטרה בית יוסף והרב רובין.</h2>
+          <h3>בהשגחת רבנות בת-ים</h3>
+          <img className="kosher-img" src="/atliz-shino/images/robin-kosher.png" alt="..." />
+          <img className="kosher-img" src="/atliz-shino/images/atara-kosher.png" alt="..." />
+          <img className="kosher-img" src="/atliz-shino/images/mahfod-kosher2.png" alt="..." />
         </div>
 
         {searchText === "" ? <Switch>

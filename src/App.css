@@ -46,22 +46,22 @@ body {
 }
 
 
-.sorry-div {
-  /* display: block; */
-  display: none;
+.kosher-div {
+  display: block;
   text-align: center;
-  color: darkkhaki;
-  background-color: brown;
+  color: floralwhite;
+  background-color: rgb(165, 42, 42, 0.9);
   border-radius: 20px;
   padding: 10px;
   margin: 20px;
 }
 
-/**
- * Demo Styles
- */
+.kosher-img {
+  width: 6rem;
+  margin: 10px;
+}
 
- html {
+html {
   height: 100%;
   box-sizing: border-box;
 }
