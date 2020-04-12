@@ -3,6 +3,10 @@ import './Contact.css';
 
 class Contant extends Component {
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
     render() {
       return (
         <div className="about-container">

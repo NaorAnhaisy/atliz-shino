@@ -4,6 +4,10 @@ import { Card } from 'react-bootstrap';
 
 class MeatGallery extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     createCardItem = (item) => {
         let cardItem =
             <div key={item.name} className="col mb-4">
@@ -43,6 +47,8 @@ class MeatGallery extends Component {
         return (
             <>
                 <div className="container">
+                    {this.props.itemName && <h1 className="meats-header">{this.props.itemName} :</h1>}
+                    <br />
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
                         {this.createHTMLItems(this.props.items)}
                     </div>

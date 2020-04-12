@@ -10,3 +10,9 @@
 .my-name {
     text-align: right;
 }
+
+.down-nav-link {
+    font-size: medium;
+    display: inline;
+    padding: 0;
+}

@@ -47,7 +47,7 @@
 .card-text {
     text-align: right;
     font-size: large;
-    height: 80px;
+    height: fit-content;
     font-weight: bold;
 }
 

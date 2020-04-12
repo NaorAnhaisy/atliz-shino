@@ -5,17 +5,21 @@ import { getAllProducts } from '../../StoreDB/Store.js'
 
 class Meats extends Component {
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     createMeatSliders = () => {
         let slidersElements = []
         getAllProducts().filter(product => product.general === "meat")
             .forEach((product, i) => {
-            slidersElements.push(
-                <div key={i}>
-                    <SimpleSlider className="content" product={product} />
-                    <br />
-                </div>
-            )
-        });
+                slidersElements.push(
+                    <div key={i}>
+                        <SimpleSlider className="content" product={product} />
+                        <br />
+                    </div>
+                )
+            });
 
         return slidersElements;
     }

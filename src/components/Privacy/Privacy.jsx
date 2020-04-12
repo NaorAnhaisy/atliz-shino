@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 export default class Privacy extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <div className="terms-privacy">
@@ -65,29 +70,29 @@ export default class Privacy extends Component {
         <p>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser. Learn more about cookies: <a href="https://www.termsfeed.com/blog/cookies/">All About Cookies</a>.</p>
         <p>We use both session and persistent Cookies for the purposes set out below:</p>
         <ul>
-        <li>
+          <li>
             <p>
               <strong>Necessary / Essential Cookies</strong>
-              <br/>
+              <br />
               <span>Type: Session Cookies</span>
-              <br/>
+              <br />
               <span>Administered by: Us</span>
-              <br/>
+              <br />
               <span>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</span>
             </p>
-            </li>
-            <li>
-              <p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
-              <p>Type: Persistent Cookies</p>
-              <p>Administered by: Us</p>
-              <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
-            </li>
-            <li>
-              <p><strong>Functionality Cookies</strong></p>
-              <p>Type: Persistent Cookies</p>
-              <p>Administered by: Us</p>
-              <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</p>
-            </li>
+          </li>
+          <li>
+            <p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
+            <p>Type: Persistent Cookies</p>
+            <p>Administered by: Us</p>
+            <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
+          </li>
+          <li>
+            <p><strong>Functionality Cookies</strong></p>
+            <p>Type: Persistent Cookies</p>
+            <p>Administered by: Us</p>
+            <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</p>
+          </li>
           <p>For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy.</p>
 
           <h2>Use of Your Personal Data</h2>
