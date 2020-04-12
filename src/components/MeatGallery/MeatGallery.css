@@ -37,8 +37,9 @@
 }
 
 .card-title {
+    padding: 3px;
     text-align: center;
-    height: 80px;
+    height: fit-content;
     background-color: aliceblue;
     border-radius: 30px;
 }

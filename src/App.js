@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MainNavbar from './components/MainNavbar/MainNavbar'
+import DownNavbar from './components/DownNavbar/DownNavbar'
 import About from './components/About/About'
 import Meats from './components/Meats/Meats'
 import MeatGallery from './components/MeatGallery/MeatGallery'
@@ -9,6 +10,8 @@ import { Route, Switch } from "react-router-dom";
 import { getAllItems, getItemsOfType } from "./StoreDB/Store.js"
 import Contact from './components/Contact/Contact'
 import { Container } from 'react-bootstrap';
+import Terms from './components/Terms/Terms'
+import Privacy from './components/Privacy/Privacy'
 
 function App() {
 
@@ -70,7 +73,15 @@ function App() {
           <Route path="/atliz-shino/contact" component={Contact} />
 
         </Switch> : <MeatGallery items={getItemsByText()} />}
+
+        <Switch>
+          <Route path="/atliz-shino/terms" component={Terms} />
+          <Route path="/atliz-shino/privacy" component={Privacy} />
+        </Switch>
+
       </Container>
+      <div className="push"></div>
+      <footer className="footer"><DownNavbar /></footer>
     </div>
   );
 }

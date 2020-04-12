@@ -1,6 +1,8 @@
 .meats-header {
-    text-align: right;
     color: white;
-    width: 50%;
-    margin: auto;
+    margin-left: auto;
+    font-family: "DanaYad";
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0,0.4);
+    width: fit-content;
 }

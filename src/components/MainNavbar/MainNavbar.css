@@ -1,7 +1,7 @@
 .navbar-brand {
     margin-left: 3vw;
     font-weight: bold;
-    color: gold !important;
+    color: darkgoldenrod !important;
     font-size: x-large;
 }
 
@@ -33,4 +33,22 @@
 
 .navbar-nav .nav-link:hover {
     text-decoration: underline;
+}
+
+.darkCls {
+    animation: startDark 0.5s forwards;
+}
+
+.lightCls {
+    animation: startLight 0.5s forwards;
+}
+
+@keyframes startDark {
+    from { background-color: whitesmoke; }
+    to { background-color: black; }
+}
+
+@keyframes startLight {
+    from { background-color: black; }
+    to { background-color: whitesmoke; }
 }

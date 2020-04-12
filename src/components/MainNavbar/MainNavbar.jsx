@@ -9,11 +9,20 @@ class MainNavbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: ""
+      text: "",
+      navBackground: "dark"
     }
 
     this.formPreventDefault = this.formPreventDefault.bind(this);
     this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor = window.scrollY < 70 ? "dark" : "light";
+
+      this.setState({ navBackground: backgroundcolor });
+    });
   }
 
   handleChange(event) {
@@ -40,7 +49,7 @@ class MainNavbar extends Component {
 
   render() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg={this.state.navBackground} variant={this.state.navBackground} className={this.state.navBackground === "dark" ? "darkCls" : "lightCls"} expand="lg" sticky="top">
           <Navbar.Brand as={Link} to="/atliz-shino" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -67,7 +67,8 @@
 .headerItems {
     background-color: rgba(245, 255, 250, 0.8);
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: DanaYad;
 }
 
 .header-icon {

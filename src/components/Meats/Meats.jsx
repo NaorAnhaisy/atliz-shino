@@ -23,6 +23,7 @@ class Meats extends Component {
     render() {
         return (
             <div>
+                <h1 className="meats-header">נגיעה, מן המגוון...</h1>
                 {this.createMeatSliders()}
             </div>
         )

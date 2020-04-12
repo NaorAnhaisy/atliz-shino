@@ -50,7 +50,6 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-
       <div className="slide-div">
         <h1 className="headerItems">
           <span className="item-name">{this.props.product.itemName}</span>
