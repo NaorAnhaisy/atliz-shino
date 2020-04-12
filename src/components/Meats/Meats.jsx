@@ -27,8 +27,20 @@ class Meats extends Component {
     render() {
         return (
             <div>
-                <h1 className="meats-header">נגיעה, מן המגוון...</h1>
-                {this.createMeatSliders()}
+                <div className="kosher-div">
+                    <h1 style={{ textDecoration: "underline" }}>אטליז שינו ובניו - מרכז הבשר החלק</h1>
+                    <br />
+                    <h2>כשרויות מהודרות בהשגחת הרב מחפוד יורה דעה, עטרה בית יוסף והרב רובין.</h2>
+                    <h3>בהשגחת רבנות בת-ים</h3>
+                    <img className="kosher-img" src="/atliz-shino/images/robin-kosher.png" alt="..." />
+                    <img className="kosher-img" src="/atliz-shino/images/atara-kosher.png" alt="..." />
+                    <img className="kosher-img" src="/atliz-shino/images/mahfod-kosher.png" alt="..." />
+                </div>
+                
+                <div>
+                    <h1 className="meats-header">נגיעה, מן המגוון...</h1>
+                    {this.createMeatSliders()}
+                </div>
             </div>
         )
     }

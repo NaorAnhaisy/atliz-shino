@@ -32,6 +32,10 @@
     animation: changeColor 0.5s forwards;
 }
 
+.item-image:hover {
+    cursor: pointer;
+}
+
 .images-div:hover > .item-image {
     animation: changeSize 0.5s forwards;
 }
@@ -77,7 +81,6 @@
 }
 
 .item-name {
-    /* font-family: cursive; */
     margin-right: 10px;
 }
 

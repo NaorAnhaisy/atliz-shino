@@ -22,9 +22,9 @@ function ModalItem(props) {
                     <Button variant="secondary" onClick={handleClose}>
                         סגור
                     </Button>
-                    {/* <Button variant="success" onClick={handleClose}>
+                    <Button variant="success" onClick={handleClose}>
                         הוסף לסל
-                    </Button> */}
+                    </Button>
                 </Modal.Footer>
             </Modal>
         </>

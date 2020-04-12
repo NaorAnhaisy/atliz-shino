@@ -7,7 +7,7 @@ export function getFish() {
             price: 70,
             kosher: "בד\"צ",
             isHot: false,
-            imageUrl: "https://m.pricez.co.il/ProductPictures/200x/7290003893386.jpg"
+            imageUrl: "2https://m.pricez.co.il/ProductPictures/200x/7290003893386.jpg"
         },
         {
             name: "נתח פילה דג סלמון נורווגי קפוא",

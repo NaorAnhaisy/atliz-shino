@@ -166,7 +166,7 @@ export default class Privacy extends Component {
           <p>If you have any questions about this Privacy Policy, You can contact us:</p>
           <ul>
             <li>By visiting this page on our website: https://www.atliz-shino.co.il/contact</li>
-            <li>By phone number: 03-6565484</li>
+            <li>By phone number: 03-6585484</li>
           </ul>
         </ul>
 

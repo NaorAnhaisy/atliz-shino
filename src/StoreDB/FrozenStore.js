@@ -3,7 +3,7 @@ export function getFrozen() {
 
     frozen.push(
         {
-            name: "מלוואח מוקפא - מעדנית",
+            name: "מלוואח מוקפא - מעדנות",
             price: 70,
             kosher: "רבנות הראשית",
             isHot: false,

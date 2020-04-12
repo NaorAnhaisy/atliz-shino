@@ -28,12 +28,17 @@ export function getAllProducts() {
 export function getAllItems() {
     let allItems = [];
     products.forEach(itemType => {
-        allItems.push(...itemType.getItems());
+        let itemsFromType = [];
+        itemType.getItems().forEach(item => {
+            item.type = itemType.type
+            itemsFromType.push(item)
+        });
+        allItems.push(...itemsFromType);
     });
 
     return allItems;
 }
 
-export function getItemsOfType(type) {
-    return products.find(itemType => itemType.type === type).getItems();
+export function getProductsOfType(type) {
+    return products.find(itemType => itemType.type === type);
 }

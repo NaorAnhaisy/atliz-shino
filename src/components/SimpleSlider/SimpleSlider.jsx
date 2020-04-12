@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ModalItem from '../ModalItem/ModalItem'
+import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
 
 export default class SimpleSlider extends Component {
 
@@ -22,14 +23,14 @@ export default class SimpleSlider extends Component {
     this.setState({ slideSelected: null })
   }
 
-  createSlides = (itemsArray) => {
+  createSlides = (itemsArray, type) => {
     let slides = [];
     itemsArray.forEach((item, i) => {
       slides.push
         (
           <div key={i} className="item-div">
             <div className="images-div">
-              <img className="item-image" onClick={() => this.handleSlideClick(item)} src={item.imageUrl} alt="item" />
+              <img src={item.imageUrl} className="item-image" onClick={() => this.handleSlideClick(item)} alt="item"/>
               {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
             </div>
             <h4>{item.name}</h4>
@@ -56,7 +57,7 @@ export default class SimpleSlider extends Component {
         </h1>
         <br />
         <Slider {...settings}>
-          {this.createSlides(this.props.product.getItems())}
+          {this.createSlides(this.props.product.getItems(), this.props.product.type)}
         </Slider>
 
         {this.state.slideSelected && <ModalItem item={this.state.slideSelected} cancelSelected={this.cancelSelected} />}

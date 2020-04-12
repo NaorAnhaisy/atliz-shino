@@ -11,6 +11,11 @@ body {
   min-height: 100%;
 }
 
+::selection {
+  background: transparent;
+  text-shadow: #000 0 0 2px;
+}
+
 .container {
   padding-right: 40px !important;
   padding-left: 40px !important;
@@ -43,22 +48,6 @@ body {
   url(/atliz-shino/fonts/Amentica/AmaticaSC-Regular.woff2) format('woff2'), /* Super Modern Browsers */
   url(/atliz-shino/fonts/Amentica/AmaticaSC-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
   url(/atliz-shino/fonts/Amentica/AmaticaSC-Regular.svg) format('svg'); /* Legacy iOS */
-}
-
-
-.kosher-div {
-  display: block;
-  text-align: center;
-  color: floralwhite;
-  background-color: rgb(165, 42, 42, 0.9);
-  border-radius: 20px;
-  padding: 10px;
-  margin: 20px;
-}
-
-.kosher-img {
-  width: 6rem;
-  margin: 10px;
 }
 
 html {

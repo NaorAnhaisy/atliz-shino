@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ItemsGallery.css';
 import { Card } from 'react-bootstrap';
+import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
 
 class ItemsGallery extends Component {
 
@@ -8,12 +9,14 @@ class ItemsGallery extends Component {
         window.scrollTo(0, 0)
     }
 
-    createCardItem = (item) => {
+    createCardItem = (item, type) => {
         let cardItem =
             <div key={item.name} className="col mb-4">
                 <Card>
                     <div className="card-title h2">{item.name}</div>
-                    <Card.Img variant="top" className="card-img-top" src={item.imageUrl} alt="..." />
+                    <ImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
+
+
                     <Card.Body>
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
@@ -27,10 +30,11 @@ class ItemsGallery extends Component {
         return cardItem
     }
 
-    createHTMLItems = (items) => {
+    createHTMLItems = (product) => {
         let listItems = [];
+        let items = this.props.itemName ? product : product.getItems();
         items.forEach(item => {
-            listItems.push(this.createCardItem(item));
+            listItems.push(this.createCardItem(item, this.props.itemName ? item.type : product.type));
         });
 
         if (listItems.length === 0) {
@@ -40,6 +44,7 @@ class ItemsGallery extends Component {
                     <span> לא נמצאו פריטים תואמים</span>
                 </h1>
         }
+
         return listItems
     }
 
@@ -47,9 +52,10 @@ class ItemsGallery extends Component {
         return (
             <>
                 <div className="container">
-                    {this.props.itemName && <h1 className="meats-header">{this.props.itemName} :</h1>}
+                    <h1 className="meats-header">{this.props.itemName ? this.props.itemName : this.props.items.itemName} :</h1>}
                     <br />
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
+                        {console.log(this.props.items)}
                         {this.createHTMLItems(this.props.items)}
                     </div>
                 </div>
@@ -57,4 +63,5 @@ class ItemsGallery extends Component {
         )
     }
 }
+
 export default ItemsGallery;

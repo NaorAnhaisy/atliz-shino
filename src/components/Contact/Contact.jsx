@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Contact.css';
+import MapContainer from "../MapContainer/MapContainer"
 
 class Contant extends Component {
 
@@ -34,6 +35,7 @@ class Contant extends Component {
                 בואו עוד היום ונסו את מיטב הבשר אצלנו !
             </p>
           </div>
+          <MapContainer />
         </div>
       ) 
     }

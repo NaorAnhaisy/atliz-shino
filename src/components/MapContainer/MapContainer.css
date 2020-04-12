@@ -1,0 +1,25 @@
+.leaflet-container {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {  
+    .leaflet-container {
+        height: 25vh;
+        width: 55vw;
+    }
+}
+  
+@media (min-width: 576px) and (max-width:768px) {  
+    .leaflet-container {
+        height: 30vh;
+        width: 40vw;
+    }
+}
+
+@media (min-width: 768px) {  
+    .leaflet-container {
+        height: 40vh;
+        width: 50vw;
+    }
+}

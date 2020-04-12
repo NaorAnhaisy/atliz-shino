@@ -66,7 +66,7 @@ export function getBeef() {
             name: "מוח בקר קפוא",
             kosher: "הרב מחפוד",
             isHot: false,
-            imageUrl: "https://kamapo.co.il/static/media/small-catalog/7290000551173.png"
+            imageUrl: "1https://kamapo.co.il/static/media/small-catalog/7290000551173.png"
         },
         {
             name: "חלאווית (שקדי עגל)",

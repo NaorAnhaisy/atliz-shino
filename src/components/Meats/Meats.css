@@ -6,3 +6,18 @@
     background-color: rgb(0, 0, 0,0.4);
     width: fit-content;
 }
+
+.kosher-div {
+    display: block;
+    text-align: center;
+    color: floralwhite;
+    background-color: rgb(165, 42, 42, 0.9);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+  
+.kosher-img {
+    width: 6rem;
+    margin: 10px;
+}
