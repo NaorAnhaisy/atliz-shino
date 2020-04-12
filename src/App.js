@@ -5,7 +5,7 @@ import MainNavbar from './components/MainNavbar/MainNavbar'
 import DownNavbar from './components/DownNavbar/DownNavbar'
 import About from './components/About/About'
 import Meats from './components/Meats/Meats'
-import MeatGallery from './components/MeatGallery/MeatGallery'
+import ItemsGallery from './components/ItemsGallery/ItemsGallery'
 import { Route, Switch } from "react-router-dom";
 import { getAllItems, getItemsOfType } from "./StoreDB/Store.js"
 import Contact from './components/Contact/Contact'
@@ -35,44 +35,44 @@ function App() {
           <Route path="/atliz-shino/about" component={About} />
           <Route
             path="/atliz-shino/meat/beef"
-            render={(props) => <MeatGallery {...props} itemName="בקר" items={getItemsOfType("beef")} isPriceForKg={true} />}
+            render={(props) => <ItemsGallery {...props} itemName="בקר" items={getItemsOfType("beef")} isPriceForKg={true} />}
           />
           <Route
             path="/atliz-shino/meat/lamb"
-            render={(props) => <MeatGallery {...props} itemName="כבש" items={getItemsOfType("lamb")} isPriceForKg={true} />}
+            render={(props) => <ItemsGallery {...props} itemName="כבש" items={getItemsOfType("lamb")} isPriceForKg={true} />}
           />
           <Route
             path="/atliz-shino/meat/chicken"
-            render={(props) => <MeatGallery {...props} itemName="עופות" items={getItemsOfType("chicken")} isPriceForKg={true} />}
+            render={(props) => <ItemsGallery {...props} itemName="עופות" items={getItemsOfType("chicken")} isPriceForKg={true} />}
           />
           <Route
             path="/atliz-shino/meat/barbecue"
-            render={(props) => <MeatGallery {...props} itemName="על האש" items={getItemsOfType("barbecue")} isPriceForKg={true} />}
+            render={(props) => <ItemsGallery {...props} itemName="על האש" items={getItemsOfType("barbecue")} isPriceForKg={true} />}
           />
           <Route
             path="/atliz-shino/market/fish"
-            render={(props) => <MeatGallery {...props} itemName="דגים" items={getItemsOfType("fish")} isPriceForKg={true} />}
+            render={(props) => <ItemsGallery {...props} itemName="דגים" items={getItemsOfType("fish")} isPriceForKg={true} />}
           />
           <Route
             path="/atliz-shino/market/wine"
-            render={(props) => <MeatGallery {...props} itemName="יינות" items={getItemsOfType("wine")} isPriceForKg={false} />}
+            render={(props) => <ItemsGallery {...props} itemName="יינות" items={getItemsOfType("wine")} isPriceForKg={false} />}
           />
           <Route
             path="/atliz-shino/market/frozen"
-            render={(props) => <MeatGallery {...props} itemName="קפואים" items={getItemsOfType("frozen")} isPriceForKg={false} />}
+            render={(props) => <ItemsGallery {...props} itemName="קפואים" items={getItemsOfType("frozen")} isPriceForKg={false} />}
           />
           <Route
             path="/atliz-shino/market/spices"
-            render={(props) => <MeatGallery {...props} itemName="תבלינים" items={getItemsOfType("spices")} isPriceForKg={false} />}
+            render={(props) => <ItemsGallery {...props} itemName="תבלינים" items={getItemsOfType("spices")} isPriceForKg={false} />}
           />
-          <Route
+          {/* <Route
             path="/atliz-shino/market/cans"
-            render={(props) => <MeatGallery {...props} itemName="שימורים" items={getItemsOfType("cans")} isPriceForKg={false} />}
-          />
+            render={(props) => <ItemsGallery {...props} itemName="שימורים" items={getItemsOfType("cans")} isPriceForKg={false} />}
+          /> */}
 
           <Route path="/atliz-shino/contact" component={Contact} />
 
-        </Switch> : <MeatGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
+        </Switch> : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
 
         <Switch>
           <Route path="/atliz-shino/terms" component={Terms} />

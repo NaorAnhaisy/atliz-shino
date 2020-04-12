@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './MeatGallery.css';
+import './ItemsGallery.css';
 import { Card } from 'react-bootstrap';
 
-class MeatGallery extends Component {
+class ItemsGallery extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -57,4 +57,4 @@ class MeatGallery extends Component {
         )
     }
 }
-export default MeatGallery;
+export default ItemsGallery;

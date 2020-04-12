@@ -16,8 +16,6 @@ function ModalItem(props) {
                     <Modal.Title>{props.item.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <span className="property-header">מחיר לק"ג: </span>{props.item.price} ₪
-                    <br/>
                     <span className="property-header">כשרות: </span>{props.item.kosher}
                 </Modal.Body>
                 <Modal.Footer>

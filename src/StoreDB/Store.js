@@ -10,9 +10,9 @@ import { getCans } from "./CansStore.js"
 
 var products =
     [
-        { itemName: "בקר", type: "beef", general:"meat", getItems: getBeef },
-        { itemName: "כבש", type: "lamb", general:"meat", getItems: getLamb },
-        { itemName: "עופות", type: "chicken", general:"meat", getItems: getChicken },
+        { itemName: "בקר & עגל", type: "beef", general:"meat", getItems: getBeef },
+        { itemName: "כבש & טלה", type: "lamb", general:"meat", getItems: getLamb },
+        { itemName: "עופות & אווז", type: "chicken", general:"meat", getItems: getChicken },
         { itemName: "על האש", type: "barbecue", general:"meat", getItems: getBarbecue },
         { itemName: "דגים", type: "fish", general:"market", getItems: getFish },
         { itemName: "יינות", type: "wine", general:"market", getItems: getWine },

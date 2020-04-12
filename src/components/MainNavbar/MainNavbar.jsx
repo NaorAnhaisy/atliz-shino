@@ -72,7 +72,7 @@ class MainNavbar extends Component {
               <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/wine">יינות</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/spices">תבלינים</NavDropdown.Item>
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/cans">שימורים</NavDropdown.Item>
+              {/* <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/cans">שימורים</NavDropdown.Item> */}
               <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/frozen">קפואים</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link onClick={this.initText} as={Link} to="/atliz-shino/contact">צור קשר</Nav.Link>

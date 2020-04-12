@@ -33,7 +33,6 @@ export default class SimpleSlider extends Component {
               {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
             </div>
             <h4>{item.name}</h4>
-            {/* <h4>{item.name} - ₪ {item.price} לק"ג</h4> */}
           </div>
         )
     });
