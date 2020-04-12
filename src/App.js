@@ -32,7 +32,7 @@ function App() {
           <h3>בהשגחת רבנות בת-ים</h3>
           <img className="kosher-img" src="/atliz-shino/images/robin-kosher.png" alt="..." />
           <img className="kosher-img" src="/atliz-shino/images/atara-kosher.png" alt="..." />
-          <img className="kosher-img" src="/atliz-shino/images/mahfod-kosher2.png" alt="..." />
+          <img className="kosher-img" src="/atliz-shino/images/mahfod-kosher.png" alt="..." />
         </div>
 
         {searchText === "" ? <Switch>
