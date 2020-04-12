@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ItemsGallery.css';
 import { Card } from 'react-bootstrap';
-import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
+import GalleryImageWithDefault from '../GalleryImageWithDefault/GalleryImageWithDefault'
 
 class ItemsGallery extends Component {
 
@@ -14,9 +14,7 @@ class ItemsGallery extends Component {
             <div key={item.name} className="col mb-4">
                 <Card>
                     <div className="card-title h2">{item.name}</div>
-                    <ImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
-
-
+                    <GalleryImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
                     <Card.Body>
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
@@ -55,7 +53,6 @@ class ItemsGallery extends Component {
                     <h1 className="meats-header">{this.props.itemName ? this.props.itemName : this.props.items.itemName} :</h1>}
                     <br />
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
-                        {console.log(this.props.items)}
                         {this.createHTMLItems(this.props.items)}
                     </div>
                 </div>

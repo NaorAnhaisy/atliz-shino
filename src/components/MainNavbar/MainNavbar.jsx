@@ -10,7 +10,8 @@ class MainNavbar extends Component {
     super(props);
     this.state = {
       text: "",
-      navBackground: "dark"
+      navBackground: "dark",
+      expanded: false
     }
 
     this.formPreventDefault = this.formPreventDefault.bind(this);
@@ -18,16 +19,19 @@ class MainNavbar extends Component {
     this.clearText = this.clearText.bind(this);
   }
 
+  setExpanded= (newExpanded) => {
+    this.setState({expanded: newExpanded})
+  }
+
   componentDidMount() {
     document.addEventListener("scroll", () => {
       const backgroundcolor = window.scrollY < 70 ? "dark" : "light";
-
       this.setState({ navBackground: backgroundcolor });
     });
   }
 
   clearText() {
-    this.myFormRef.value=""
+    this.myFormRef.value = ""
     this.initText()
   }
 
@@ -37,6 +41,7 @@ class MainNavbar extends Component {
 
   sendTextToProps = () => {
     this.props.setSearchText(this.state.text);
+    this.setExpanded(false);
   }
 
   keyPressed = (e) => {
@@ -47,6 +52,7 @@ class MainNavbar extends Component {
 
   initText = () => {
     this.props.setSearchText("");
+    this.setExpanded(false)
   }
 
   formPreventDefault(e) {
@@ -55,9 +61,9 @@ class MainNavbar extends Component {
 
   render() {
     return (
-      <Navbar bg={this.state.navBackground} variant={this.state.navBackground} className={this.state.navBackground === "dark" ? "darkCls" : "lightCls"} expand="lg" sticky="top">
+      <Navbar expanded={this.state.expanded} bg={this.state.navBackground} variant={this.state.navBackground} className={this.state.navBackground === "dark" ? "darkCls" : "lightCls"} expand="lg" sticky="top">
         <Navbar.Brand as={Link} to="/atliz-shino" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle onClick={() => this.setExpanded(this.state.expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto-left">
             <Nav.Link onClick={this.initText} as={Link} to="/atliz-shino/about">מי אנחנו</Nav.Link>

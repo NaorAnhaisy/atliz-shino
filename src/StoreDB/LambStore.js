@@ -12,7 +12,7 @@ export function getLamb() {
             name: "שומן כבש",
             kosher: "בד\"צ",
             isHot: false,
-            imageUrl: "https://lh3.googleusercontent.com/proxy/RQ2h_OzhWIW8zfeE-AW6N2fkvikIQ5Gt9B-fdpB3CiGzxzxdsdrPPoWrtzurrVF222HS_k1keUWcwtgiNbDvsGYy996qdZGLuHfPO852oqwWSMacSjU"
+            imageUrl: "https://www.meatpoint.co.il/images/itempics/200016_16032019131739_large.jpg"
         },
         {
             name: "כתף כבש",

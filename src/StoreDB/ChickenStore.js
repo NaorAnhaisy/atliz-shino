@@ -6,7 +6,7 @@ export function getChicken() {
             name: "עוף שלם טרי",
             kosher: "עטרה, הרב מחפוד",
             isHot: false,
-            imageUrl: "1https://m.pricez.co.il/ProductPictures/Pricez69104.jpg"
+            imageUrl: "https://m.pricez.co.il/ProductPictures/Pricez69104.jpg"
         },
         {
             name: "פרגיות טרי",

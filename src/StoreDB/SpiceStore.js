@@ -7,7 +7,7 @@ export function getSpices() {
             price: 70,
             kosher: "רבנות הראשית",
             isHot: true,
-            imageUrl: "1https://www.tavlineypereg.co.il/ProductsImages/G269311.jpg"
+            imageUrl: "https://www.tavlineypereg.co.il/ProductsImages/G269311.jpg"
         },
         {
             name: "לימון בלאדי - פרג",

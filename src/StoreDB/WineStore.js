@@ -35,7 +35,7 @@ export function getWine() {
             price: 60,
             kosher: "בד\"צ",
             isHot: false,
-            imageUrl: "22https://4.bp.blogspot.com/-g5r89PWTGkc/URSChVOJW0I/AAAAAAAAHaE/DmMd-WY8vII/s1600/arak_askalon.jpg"
+            imageUrl: "https://4.bp.blogspot.com/-g5r89PWTGkc/URSChVOJW0I/AAAAAAAAHaE/DmMd-WY8vII/s1600/arak_askalon.jpg"
         }
     )
 

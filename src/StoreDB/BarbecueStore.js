@@ -6,7 +6,7 @@ export function getBarbecue() {
             name: "קבב ביתי - בשר טחון ושומן כבש",
             kosher: "הרב מחפוד",
             isHot: false,
-            imageUrl: "1https://meatstore.old.accosites.org/wp-content/uploads/2016/11/kabab01.jpg"
+            imageUrl: "https://meatstore.old.accosites.org/wp-content/uploads/2016/11/kabab01.jpg"
         },
         {
             name: "נקניקיות חריפות (מרגז)",

@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ModalItem from '../ModalItem/ModalItem'
-import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
+import SliderImageWithDefault from '../SliderImageWithDefault/SliderImageWithDefault'
 
 export default class SimpleSlider extends Component {
 
@@ -29,8 +29,8 @@ export default class SimpleSlider extends Component {
       slides.push
         (
           <div key={i} className="item-div">
-            <div className="images-div">
-              <img src={item.imageUrl} className="item-image" onClick={() => this.handleSlideClick(item)} alt="item"/>
+            <div className="images-div" onClick={() => this.handleSlideClick(item)}>
+              <SliderImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
               {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
             </div>
             <h4>{item.name}</h4>

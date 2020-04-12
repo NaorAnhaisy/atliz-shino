@@ -60,13 +60,13 @@ export function getBeef() {
             name: "שייטל בקר טרי",
             kosher: "הרב מחפוד",
             isHot: false,
-            imageUrl: "https://lh3.googleusercontent.com/proxy/5oGnskPt0SusaLNuXI3y94ai7MXnbKmmcA7WG8Yqh0zzFeagjiaGFrEdCRlumZIj9RIsuzIC6d-0rqxMEbv5yjTsw_Uxuns7v1oiw5BQLXEhgHdFbOak8Pjx1w7FKA"
+            imageUrl: "https://www.ynet.co.il/PicServer2/02022009/2228903/2_wa.jpg"
         },
         {
             name: "מוח בקר קפוא",
             kosher: "הרב מחפוד",
             isHot: false,
-            imageUrl: "1https://kamapo.co.il/static/media/small-catalog/7290000551173.png"
+            imageUrl: "https://kamapo.co.il/static/media/small-catalog/7290000551173.png"
         },
         {
             name: "חלאווית (שקדי עגל)",

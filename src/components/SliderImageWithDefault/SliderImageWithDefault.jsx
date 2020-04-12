@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Card } from 'react-bootstrap';
+import '../SimpleSlider/SimpleSlider.css'
 
-export default class ImageWithDefault extends Component {
+export default class SliderImageWithDefault extends Component {
     constructor(props) {
         super(props);
 
@@ -17,10 +17,10 @@ export default class ImageWithDefault extends Component {
 
     render() {
         return (
-            <Card.Img
-                variant="top"
-                className="card-img-top"
+            <img
+                className="item-image"
                 src={this.state.sourceImg}
+                alt="..."
                 onError={this._onError}
             />
         );
