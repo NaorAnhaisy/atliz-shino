@@ -58,6 +58,7 @@ class MainNavbar extends Component {
   }
 
   initText = () => {
+    this.setState({ text: "" });
     this.props.setSearchText("");
     this.setExpanded(false)
   }
