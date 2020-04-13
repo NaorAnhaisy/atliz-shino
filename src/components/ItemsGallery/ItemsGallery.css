@@ -42,6 +42,7 @@
     height: fit-content;
     background-color: aliceblue;
     border-radius: 30px;
+    text-shadow: #000 0 0 2px;
 }
 
 .card-text {
@@ -52,7 +53,7 @@
 }
 
 .card-img, .card-img-top {
-    height: 220px;
+    height: 200px;
 }
 
 .prop-header {
@@ -80,4 +81,21 @@
 @keyframes changeColorOut {
     from { color: brown; }
     to { color: black; }
+}
+
+.images-div {
+    position: relative;
+    display: inline-flex;
+}
+
+.item-image {
+    position: relative;
+}
+
+.pepper-image {
+    position: absolute;
+    max-width: 4vw;
+    max-height: 4vw;
+    bottom: 0;
+    left: 3px;
 }

@@ -11,7 +11,8 @@ class MainNavbar extends Component {
     this.state = {
       text: "",
       navBackground: "dark",
-      expanded: false
+      expanded: false,
+      clearTextVisibility: false
     }
 
     this.formPreventDefault = this.formPreventDefault.bind(this);
@@ -33,10 +34,16 @@ class MainNavbar extends Component {
   clearText() {
     this.myFormRef.value = ""
     this.initText()
+    this.setState({clearTextVisibility: false})
   }
 
   handleChange(event) {
     this.setState({ text: event.target.value });
+    if (event.target.value === "") {
+      this.setState({clearTextVisibility: false})
+    } else {
+      this.setState({clearTextVisibility: true})
+    }
   }
 
   sendTextToProps = () => {
@@ -78,14 +85,13 @@ class MainNavbar extends Component {
               <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/wine">יינות</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/spices">תבלינים</NavDropdown.Item>
-              {/* <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/cans">שימורים</NavDropdown.Item> */}
               <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/frozen">קפואים</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link onClick={this.initText} as={Link} to="/atliz-shino/contact">צור קשר</Nav.Link>
           </Nav>
           <Form onSubmit={this.formPreventDefault} inline>
             <div className="search-clear-div">
-              <img className="clear-img" src="/atliz-shino/images/clearText.png" alt="..." onClick={this.clearText} />
+              <img className="clear-img" style={{visibility:this.state.clearTextVisibility ? "visible" : "hidden"}} src="/atliz-shino/images/clearText.png" alt="..." onClick={this.clearText} />
               <FormControl ref={(el) => this.myFormRef = el} onKeyPress={this.keyPressed} className="mr-sm-2 search-field" type="text" onChange={this.handleChange} placeholder="הכנס שם מוצר" />
             </div>
             <Button className="search-btn" variant="outline-info" onClick={this.sendTextToProps}>חפש!</Button>

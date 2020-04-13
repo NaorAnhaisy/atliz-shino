@@ -14,7 +14,12 @@ class ItemsGallery extends Component {
             <div key={item.name} className="col mb-4">
                 <Card>
                     <div className="card-title h2">{item.name}</div>
-                    <GalleryImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
+                    
+                    <div className="images-div">
+                        <GalleryImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
+                        {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
+                    </div>
+                    
                     <Card.Body>
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
