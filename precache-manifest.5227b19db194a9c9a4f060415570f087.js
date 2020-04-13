@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1dda1e35e44cd00525ee4ad7da3b3c2",
+    "revision": "6614dd32a0a009cb80b6b275b6ed48cd",
     "url": "/atliz-shino/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/atliz-shino/static/css/2.b1359ecf.chunk.css"
   },
   {
-    "revision": "dcda18dc135f9962dcb8",
-    "url": "/atliz-shino/static/css/main.0ca5aef2.chunk.css"
+    "revision": "871f69be9e43b40b0205",
+    "url": "/atliz-shino/static/css/main.8fbd0ffc.chunk.css"
   },
   {
     "revision": "88e7cea444e62198c55e",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/atliz-shino/static/js/2.cb4d3e2d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dcda18dc135f9962dcb8",
-    "url": "/atliz-shino/static/js/main.2089ac64.chunk.js"
+    "revision": "871f69be9e43b40b0205",
+    "url": "/atliz-shino/static/js/main.cfb85956.chunk.js"
   },
   {
     "revision": "a46ddd81f17c6f1b3e89",
