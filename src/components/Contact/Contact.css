@@ -11,3 +11,8 @@
 .address {
     display: inline-grid;
 }
+
+.contact-phone {
+    width: 1.5rem;
+    margin: 10px;
+}

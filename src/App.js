@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      
+
       <MainNavbar setSearchText={setSearchText} />
       <Container>
 
@@ -65,12 +65,10 @@ function App() {
 
           <Route path="/atliz-shino/contact" component={Contact} />
 
-        </Switch> : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
-
-        <Switch>
           <Route path="/atliz-shino/terms" component={Terms} />
           <Route path="/atliz-shino/privacy" component={Privacy} />
-        </Switch>
+
+        </Switch> : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
 
       </Container>
       <div className="push"></div>

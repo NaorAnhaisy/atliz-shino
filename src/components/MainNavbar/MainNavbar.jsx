@@ -33,6 +33,7 @@ class MainNavbar extends Component {
 
   clearText() {
     this.myFormRef.value = ""
+    this.setState({ text: "" });
     this.initText()
     this.setState({clearTextVisibility: false})
   }
@@ -58,7 +59,6 @@ class MainNavbar extends Component {
   }
 
   initText = () => {
-    this.setState({ text: "" });
     this.props.setSearchText("");
     this.setExpanded(false)
   }

@@ -1,6 +1,9 @@
 .leaflet-container {
     margin: auto;
     margin-bottom: 20px;
+    border-radius: 15px;
+    border-style: inset;
+    box-shadow: 0 0 4px #c14040e6;
 }
 
 @media (max-width: 576px) {  
