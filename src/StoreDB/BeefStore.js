@@ -27,6 +27,12 @@ export function getBeef() {
             imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Picanha3.jpg"
         },
         {
+            name: "אנטריקוט פריים רייב על העצם",
+            kosher: "הרב מחפוד",
+            isHot: false,
+            imageUrl: "https://zuk-farm.co.il/wp-content/uploads/2018/08/222-e1553115952424.jpg"
+        },
+        {
             name: "סטייק סינטה טרי",
             kosher: "הרב מחפוד",
             isHot: false,
@@ -79,6 +85,12 @@ export function getBeef() {
             kosher: "הרב מחפוד, עטרה",
             isHot: false,
             imageUrl: "https://www.meatnet.co.il/media/catalog/product/cache/1/small_image/426x290/9df78eab33525d08d6e5fb8d27136e95/f/i/file_1_27.jpg"
+        },
+        {
+            name: "אוסבוקו עגל",
+            kosher: "הרב מחפוד, עטרה",
+            isHot: false,
+            imageUrl: "https://www.meatnet.co.il/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/h/shutterstock_559327555.jpg"
         },
         {
             name: "בשר עגל חלבי טרי",

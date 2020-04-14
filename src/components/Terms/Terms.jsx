@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
 import './Terms.css'
+import Confetti from '../Confetti/Confetti';
+
 export default class Privacy extends Component {
 
+  state = {
+    confettiActive: false
+  }
+  
   componentDidMount() {
     window.scrollTo(0, 0)
+  }
+
+  easterEgg = () => {
+    this.setState({confettiActive: true})
+    setTimeout(() => {
+      this.setState({confettiActive: false})
+      console.log("Happy Easter Egg !!")
+    }, 5000);
   }
 
   render() {
     return (
       <div className="terms-privacy">
+        {this.state.confettiActive && <Confetti /> }
         <h1>Terms and Conditions</h1>
 
-        <p>Last updated: April 11, 2020</p>
+        <p>
+          Last updated: April 11, 202<img onClick={this.easterEgg} className="easter-egg" src='/atliz-shino/images/easterEgg.png' alt="easterEgg" /></p>
 
         <p>Please read these terms and conditions carefully before using Our Service.</p>
 

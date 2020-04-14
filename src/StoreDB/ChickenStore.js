@@ -60,7 +60,13 @@ export function getChicken() {
             name: "עוף קפוא",
             kosher: "הרב רוביא",
             isHot: false,
-            imageUrl: "https://cdn.shopify.com/s/files/1/1286/6357/products/feb0194fcb2afffd8c601d26687cc7d2_0d11519a-d585-4e2f-a95f-b961c3c9200e_1024x1024.jpg?v=1503855792"
+            imageUrl: "https://sc02.alicdn.com/kf/UT8JoqNXCxXXXagOFbX1/Frozen-Chicken-Meat-All-cuts.jpg"
+        },
+        {
+            name: "עופיון טרי",
+            kosher: "הרב רוביא",
+            isHot: false,
+            imageUrl: "http://www.atgroup.co.il/images/uploaded/products/79_L.jpg"
         },
         {
             name: "חזה מולרד אווז קפוא",

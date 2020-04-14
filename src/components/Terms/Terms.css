@@ -4,3 +4,9 @@
     direction: ltr;
     border-radius: 10px;
 }
+
+.easter-egg {
+    width: 0.7rem;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
