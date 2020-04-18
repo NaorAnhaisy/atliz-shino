@@ -27,8 +27,9 @@ function App() {
       <MainNavbar setSearchText={setSearchText} />
       <Container>
 
-        {searchText === "" ? <Switch>
-          <Route path="" component={Meats} exact />
+        {searchText === "" ? 
+        <Switch>
+          <Route path="/" component={Meats} exact />
           <Route path="/about" component={About} />
           <Route
             path="/meat/beef"
@@ -68,7 +69,8 @@ function App() {
           <Route path="/terms" component={Terms} />
           <Route path="/privacy" component={Privacy} />
 
-        </Switch> : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
+        </Switch> 
+        : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
 
       </Container>
       <div className="push"></div>

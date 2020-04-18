@@ -13,11 +13,11 @@ class DownNavbar extends Component {
                         </div>
                         <div className="col copyright-span">
                             Atliz-Shino and his sons © 2020 - All Rights Reserve.
-                            <Nav.Link className="down-nav-link" onClick={this.initText} as={Link} to="/atliz-shino/terms">
+                            <Nav.Link className="down-nav-link" onClick={this.initText} as={Link} to="/terms">
                                 <span> Terms </span>
                             </Nav.Link> 
                             <span> & </span>
-                            <Nav.Link className="down-nav-link" onClick={this.initText} as={Link} to="/atliz-shino/privacy">
+                            <Nav.Link className="down-nav-link" onClick={this.initText} as={Link} to="/privacy">
                                 <span> Privacy </span>
                             </Nav.Link> 
                         </div>

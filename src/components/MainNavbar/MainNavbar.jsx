@@ -70,7 +70,7 @@ class MainNavbar extends Component {
   render() {
     return (
       <Navbar expanded={this.state.expanded} bg={this.state.navBackground} variant={this.state.navBackground} className={this.state.navBackground === "dark" ? "darkCls" : "lightCls"} expand="lg" sticky="top">
-        <Navbar.Brand as={Link} to="" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
         <Navbar.Toggle onClick={() => this.setExpanded(this.state.expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto-left">
