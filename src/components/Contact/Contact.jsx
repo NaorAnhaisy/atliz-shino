@@ -19,7 +19,7 @@ class Contant extends Component {
           <p>
             <span>אזורי משלוח: ראשון לציון, חולון, בת ים</span>
             <br />
-            <span>מינימום הזמנה למשלוח 150 ₪</span>
+            <span>מינימום הזמנה למשלוח 300 ₪</span>
             <br />
             <span>* את ההזמנות ניתן לבצע טלפונית או בבית העסק עצמו, ולבקש שיגיע עד לפתח דלתכם *</span>
           </p>
@@ -33,7 +33,7 @@ class Contant extends Component {
           </p>
           <br />
           <p className="end-contact">
-            <span>בואו עוד היום ונסו את מיטב הבשר אצלנו !</span>
+            <span>בואו עוד היום ונסו את מיטב הבשרים שלנו !</span>
           </p>
         </div>
         <MapContainer />

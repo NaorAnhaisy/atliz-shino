@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import './ModalItem.css';
+import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
 
 function ModalItem(props) {
     const [show, setShow] = useState(true);
@@ -16,7 +17,7 @@ function ModalItem(props) {
                     <Modal.Title>{props.item.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <span className="property-header">כשרות: </span>{props.item.kosher}
+                    <ImageWithDefault src={props.item.imageUrl} default={'/atliz-shino/images/' + props.type + '.png'} clsName="modal-image" />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>

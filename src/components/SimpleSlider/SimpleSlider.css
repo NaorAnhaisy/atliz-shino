@@ -20,27 +20,20 @@
     max-height: 20vw;
 }
 
-.pepper-image {
-    position: absolute;
-    max-width: 6vw;
-    max-height: 6vw;
-    bottom: 0;
-    left: 3px;
-}
-
 .item-div:hover {
     animation: changeColor 0.5s forwards;
 }
 
 .item-image:hover {
     cursor: pointer;
+    z-index: 4;
 }
 
-.images-div:hover > .item-image {
+.item-div:hover > .images-div > .item-image {
     animation: changeSize 0.5s forwards;
 }
 
-.images-div:not( :hover ) > .item-image {
+.item-div:not( :hover ) > .images-div > .item-image {
     animation: changeSizeOut 0.5s forwards;
 }
 

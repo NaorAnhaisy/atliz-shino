@@ -3,9 +3,13 @@
 }
 
 .modal-body {
-    text-align: right;
+    margin: auto;
 }
 
 .property-header {
     font-weight: bold;
+}
+
+.modal-image {
+    max-width: 100%;
 }

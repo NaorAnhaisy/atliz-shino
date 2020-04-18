@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ItemsGallery.css';
 import { Card } from 'react-bootstrap';
-import GalleryImageWithDefault from '../GalleryImageWithDefault/GalleryImageWithDefault'
+import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
 
 class ItemsGallery extends Component {
 
@@ -16,17 +16,19 @@ class ItemsGallery extends Component {
                     <div className="card-title h2">{item.name}</div>
                     
                     <div className="images-div">
-                        <GalleryImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} />
+                        <ImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} clsName="card-img-top" />
                         {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
                     </div>
-                    
                     <Card.Body>
+                    </Card.Body>
+                    
+                    {/* <Card.Body>
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
                             <br />
-                            {/* <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span> */}
+                            // <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span>
                         </Card.Text>
-                    </Card.Body>
+                    </Card.Body> */}
                 </Card>
             </div>
 

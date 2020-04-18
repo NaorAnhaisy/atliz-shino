@@ -1,8 +1,26 @@
 .navbar-brand {
     margin-left: 3vw;
     font-weight: bold;
-    color: darkgoldenrod !important;
+    color: darkgoldenrod;
     font-size: x-large;
+}
+
+.navbar-brand:hover {
+    animation: changeNavBrandColor 0.3s forwards;
+}
+
+.navbar-brand:not(hover) {
+    animation: changeBackNavBrandColor 0.3s forwards;
+}
+
+@keyframes changeNavBrandColor {
+    from { color: darkgoldenrod }
+    to { color: rgb(224, 176, 54) }
+}
+
+@keyframes changeBackNavBrandColor {
+    from { color: rgb(224, 176, 54) }
+    to { color: darkgoldenrod }
 }
 
 .mr-auto-left {

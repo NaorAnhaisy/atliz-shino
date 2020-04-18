@@ -106,7 +106,7 @@ export default class Privacy extends Component {
 
         <ul>
           <li>By visiting this page on our website: https://www.atliz-shino.com/contact</li>
-          <li>By phone number: 03-6565484</li>
+          <li>By phone number: 03-6585484</li>
         </ul>
       </div>
     )
