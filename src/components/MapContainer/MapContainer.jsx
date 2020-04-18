@@ -17,8 +17,8 @@ class MapContainer extends React.Component {
     return (
       <Map center={position} zoom={this.state.zoom}>
         <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+          url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
         />
         <Marker position={position}>
           <Popup>
