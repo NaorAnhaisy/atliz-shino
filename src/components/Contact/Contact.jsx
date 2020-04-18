@@ -28,7 +28,7 @@ class Contant extends Component {
             <span>בת ים</span>
           </p>
           <p>
-            <img className="contact-phone" src="/atliz-shino/images/contactPhone.png" alt="contactPhone" />
+            <img className="contact-phone" src="/images/contactPhone.png" alt="contactPhone" />
             <span>טלפון העסק: 03-6585484</span>
           </p>
           <br />

@@ -16,8 +16,8 @@ class ItemsGallery extends Component {
                     <div className="card-title h2">{item.name}</div>
                     
                     <div className="images-div">
-                        <ImageWithDefault src={item.imageUrl} default={'/atliz-shino/images/' + type + '.png'} clsName="card-img-top" />
-                        {item.isHot && <img className="pepper-image" src='/atliz-shino/images/hotPepper.png' alt="hotPepper" />}
+                        <ImageWithDefault src={item.imageUrl} default={'/images/' + type + '.png'} clsName="card-img-top" />
+                        {item.isHot && <img className="pepper-image" src='/images/hotPepper.png' alt="hotPepper" />}
                     </div>
                     <Card.Body>
                     </Card.Body>
@@ -45,7 +45,7 @@ class ItemsGallery extends Component {
         if (listItems.length === 0) {
             listItems =
                 <h1 className="no-items-found-error">
-                    <img className="no-items-found-image" src="/atliz-shino/images/warning.png" alt="warning" />
+                    <img className="no-items-found-image" src="/images/warning.png" alt="warning" />
                     <span> לא נמצאו פריטים תואמים</span>
                 </h1>
         }

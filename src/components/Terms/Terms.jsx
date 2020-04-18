@@ -27,7 +27,7 @@ export default class Privacy extends Component {
         <h1>Terms and Conditions</h1>
 
         <p>
-          Last updated: April 11, 202<img onClick={this.easterEgg} className="easter-egg" src='/atliz-shino/images/easterEgg.png' alt="easterEgg" /></p>
+          Last updated: April 11, 202<img onClick={this.easterEgg} className="easter-egg" src='/images/easterEgg.png' alt="easterEgg" /></p>
 
         <p>Please read these terms and conditions carefully before using Our Service.</p>
 
