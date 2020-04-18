@@ -93,3 +93,8 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(34, 93, 121); 
 }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: rgb(20, 63, 83); 
+}

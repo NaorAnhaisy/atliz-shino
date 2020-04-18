@@ -30,7 +30,7 @@ export default class SimpleSlider extends Component {
         (
           <div key={i} className="item-div" onClick={() => this.handleSlideClick(item)}>
             <div className="images-div">
-              <ImageWithDefault src={item.imageUrl} default={'/images/' + type + '.png'} clsName="item-image" />
+              <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="item-image" />
               {item.isHot && <img className="pepper-image" src='/images/hotPepper.png' alt="hotPepper" />}
             </div>
             <h4>{item.name}</h4>
@@ -53,7 +53,7 @@ export default class SimpleSlider extends Component {
       <div className="slide-div">
         <h1 className="headerItems">
           <span className="item-name">{this.props.product.itemName}</span>
-          <img className="header-icon" src={'/images/' + this.props.product.type + '.png'} alt="headerIcon" />
+          <img className="header-icon" src={'/images/default/' + this.props.product.type + '.png'} alt="headerIcon" />
         </h1>
         <br />
         <Slider {...settings}>

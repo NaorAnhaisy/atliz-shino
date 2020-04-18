@@ -17,7 +17,7 @@ function ModalItem(props) {
                     <Modal.Title>{props.item.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <ImageWithDefault src={props.item.imageUrl} default={'/images/' + props.type + '.png'} clsName="modal-image" />
+                    <ImageWithDefault src={props.item.imageUrl} default={'/images/default/' + props.type + '.png'} clsName="modal-image" />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>

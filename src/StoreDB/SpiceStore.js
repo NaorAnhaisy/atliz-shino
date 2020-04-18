@@ -111,34 +111,34 @@ export function getSpices() {
             imageUrl: "https://cdn.shopify.com/s/files/1/2638/9580/products/U502312_600x600.jpg?v=1522674948"
         },
         {
-            name: "אריסה בטעם ביתי - ביטון",
+            name: "אריסה בטעם ביתי - יוחאי ביטון",
             price: 210,
             isHot: true,
-            imageUrl: "https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3034.jpg"
+            imageUrl: "2https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3034.jpg"
         },
         {
-            name: "אריסה מתוקה - ביטון",
+            name: "אריסה מתוקה - יוחאי ביטון",
             price: 210,
             isHot: false,
-            imageUrl: "https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3036.jpg"
+            imageUrl: "2https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3036.jpg"
         },
         {
-            name: "סחוג תימני - ביטון",
+            name: "סחוג תימני - יוחאי ביטון",
             price: 210,
             isHot: true,
-            imageUrl: "https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3054.jpg"
+            imageUrl: "2https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3054.jpg"
         },
         {
-            name: "סלט שום כתוש - ביטון",
+            name: "סלט שום כתוש - יוחאי ביטון",
             price: 210,
             isHot: false,
-            imageUrl: "https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3000.jpg"
+            imageUrl: "2https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3000.jpg"
         },
         {
-            name: "לימון בלאדי - ביטון",
+            name: "לימון בלאדי - יוחאי ביטון",
             price: 210,
             isHot: false,
-            imageUrl: "https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3042.jpg"
+            imageUrl: "2https://www.biton-spices.co.il/wp-content/uploads/2018/01/3C8A3042.jpg"
         },
         {
             name: "לימון בלאדי - פרג",
