@@ -55,7 +55,7 @@ export function getChicken() {
         {
             name: "עופיון",
             isHot: false,
-            imageUrl: "http://www.atgroup.co.il/images/uploaded/products/79_L.jpg"
+            imageUrl: "https://i.ibb.co/2ZpwjV0/79-L.jpg"
         },
         {
             name: "חזה מולרד אווז קפוא",

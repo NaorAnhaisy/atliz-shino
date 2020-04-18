@@ -28,45 +28,45 @@ function App() {
       <Container>
 
         {searchText === "" ? <Switch>
-          <Route path="/atliz-shino" component={Meats} exact />
-          <Route path="/atliz-shino/about" component={About} />
+          <Route path="" component={Meats} exact />
+          <Route path="/about" component={About} />
           <Route
-            path="/atliz-shino/meat/beef"
+            path="/meat/beef"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("beef")} isPriceForKg={true} />}
           />
           <Route
-            path="/atliz-shino/meat/lamb"
+            path="/meat/lamb"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("lamb")} isPriceForKg={true} />}
           />
           <Route
-            path="/atliz-shino/meat/chicken"
+            path="/meat/chicken"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("chicken")} isPriceForKg={true} />}
           />
           <Route
-            path="/atliz-shino/meat/barbecue"
+            path="/meat/barbecue"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("barbecue")} isPriceForKg={true} />}
           />
           <Route
-            path="/atliz-shino/market/fish"
+            path="/market/fish"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("fish")} isPriceForKg={true} />}
           />
           <Route
-            path="/atliz-shino/market/wine"
+            path="/market/wine"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("wine")} isPriceForKg={false} />}
           />
           <Route
-            path="/atliz-shino/market/frozen"
+            path="/market/frozen"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("frozen")} isPriceForKg={false} />}
           />
           <Route
-            path="/atliz-shino/market/spices"
+            path="/market/spices"
             render={(props) => <ItemsGallery {...props} items={getProductsOfType("spices")} isPriceForKg={false} />}
           />
 
-          <Route path="/atliz-shino/contact" component={Contact} />
+          <Route path="/contact" component={Contact} />
 
-          <Route path="/atliz-shino/terms" component={Terms} />
-          <Route path="/atliz-shino/privacy" component={Privacy} />
+          <Route path="/terms" component={Terms} />
+          <Route path="/privacy" component={Privacy} />
 
         </Switch> : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
 
