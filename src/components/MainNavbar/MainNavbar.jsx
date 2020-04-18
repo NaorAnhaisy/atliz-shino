@@ -70,25 +70,25 @@ class MainNavbar extends Component {
   render() {
     return (
       <Navbar expanded={this.state.expanded} bg={this.state.navBackground} variant={this.state.navBackground} className={this.state.navBackground === "dark" ? "darkCls" : "lightCls"} expand="lg" sticky="top">
-        <Navbar.Brand as={Link} to="/atliz-shino" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
+        <Navbar.Brand as={Link} to="" onClick={this.initText}>אטליז שינו ובניו</Navbar.Brand>
         <Navbar.Toggle onClick={() => this.setExpanded(this.state.expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto-left">
-            <Nav.Link onClick={this.initText} as={Link} to="/atliz-shino/about">מי אנחנו</Nav.Link>
+            <Nav.Link onClick={this.initText} as={Link} to="/about">מי אנחנו</Nav.Link>
             <NavDropdown title="בשרים " id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/meat/beef">בקר</NavDropdown.Item>
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/meat/lamb">כבש</NavDropdown.Item>
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/meat/chicken">עופות</NavDropdown.Item>
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/meat/barbecue">על האש</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/meat/beef">בקר</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/meat/lamb">כבש</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/meat/chicken">עופות</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/meat/barbecue">על האש</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="מכולת " id="basic-nav-dropdown">
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/fish">דגים</NavDropdown.Item>
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/wine">יינות</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/market/fish">דגים</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/market/wine">יינות</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/spices">תבלינים</NavDropdown.Item>
-              <NavDropdown.Item onClick={this.initText} as={Link} to="/atliz-shino/market/frozen">קפואים</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/market/spices">תבלינים</NavDropdown.Item>
+              <NavDropdown.Item onClick={this.initText} as={Link} to="/market/frozen">קפואים</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link onClick={this.initText} as={Link} to="/atliz-shino/contact">צור קשר</Nav.Link>
+            <Nav.Link onClick={this.initText} as={Link} to="/contact">צור קשר</Nav.Link>
           </Nav>
           <Form onSubmit={this.formPreventDefault} inline>
             <div className="search-clear-div">
