@@ -28,6 +28,7 @@ class Meats extends Component {
         return (
             <div>
                 <div className="kosher-div">
+                    <h1>Try</h1>
                     <h1 style={{ textDecoration: "underline" }}>אטליז שינו ובניו - מרכז הבשר החלק</h1>
                     <br />
                     <h2>כשרויות מהודרות בהשגחת הרב מחפוד יורה דעה, עטרה בית יוסף והרב רובין.</h2>
