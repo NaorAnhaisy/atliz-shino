@@ -92,7 +92,7 @@ class MainNavbar extends Component {
           </Nav>
           <Form onSubmit={this.formPreventDefault} inline>
             <div className="search-clear-div">
-              <img className="clear-img" style={{visibility:this.state.clearTextVisibility ? "visible" : "hidden"}} src="/atliz-shino/images/clearText.png" alt="..." onClick={this.clearText} />
+              <img className="clear-img" style={{visibility:this.state.clearTextVisibility ? "visible" : "hidden"}} src="/images/clearText.png" alt="..." onClick={this.clearText} />
               <FormControl ref={(el) => this.myFormRef = el} onKeyPress={this.keyPressed} className="mr-sm-2 search-field" type="text" onChange={this.handleChange} placeholder="הכנס שם מוצר" />
             </div>
             <Button className="search-btn" variant="outline-info" onClick={this.sendTextToProps}>חפש!</Button>

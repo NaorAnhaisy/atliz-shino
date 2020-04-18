@@ -1,5 +1,5 @@
 body {
-  background: url(%PUBLIC_URL%/images/backgroundImage2.jpg) no-repeat center center fixed;
+  background: url(/images/backgroundImage2.jpg) no-repeat center center fixed;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -20,29 +20,29 @@ body {
 
 @font-face {
   font-family: VarelaRound;
-  src: url(%PUBLIC_URL%/fonts/VarelaRound/VarelaRound.woff) format('woff'), /* Modern Browsers */
-  url(%PUBLIC_URL%/fonts/VarelaRound/VarelaRound.eot) format('embedded-opentype'), /* IE6-IE8 */
-  url(%PUBLIC_URL%/fonts/VarelaRound/VarelaRound.woff2) format('woff2'), /* Super Modern Browsers */
-  url(%PUBLIC_URL%/fonts/VarelaRound/VarelaRound.ttf) format('truetype'), /* Safari, Android, iOS */
-  url(%PUBLIC_URL%/fonts/VarelaRound/VarelaRound.svg) format('svg'); /* Legacy iOS */
+  src: url(fonts/VarelaRound/VarelaRound.woff) format('woff'), /* Modern Browsers */
+  url(fonts/VarelaRound/VarelaRound.eot) format('embedded-opentype'), /* IE6-IE8 */
+  url(fonts/VarelaRound/VarelaRound.woff2) format('woff2'), /* Super Modern Browsers */
+  url(fonts/VarelaRound/VarelaRound.ttf) format('truetype'), /* Safari, Android, iOS */
+  url(fonts/VarelaRound/VarelaRound.svg) format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: DanaYad;
-  src: url(%PUBLIC_URL%/fonts/DanaYad/DanaYad.woff) format('woff'), /* Modern Browsers */
-  url(%PUBLIC_URL%/fonts/DanaYad/DanaYad.eot) format('embedded-opentype'), /* IE6-IE8 */
-  url(%PUBLIC_URL%/fonts/DanaYad/DanaYad.woff2) format('woff2'), /* Super Modern Browsers */
-  url(%PUBLIC_URL%/fonts/DanaYad/DanaYad.ttf) format('truetype'), /* Safari, Android, iOS */
-  url(%PUBLIC_URL%/fonts/DanaYad/DanaYad.svg) format('svg'); /* Legacy iOS */
+  src: url(/fonts/DanaYad/DanaYad.woff) format('woff'), /* Modern Browsers */
+  url(/fonts/DanaYad/DanaYad.eot) format('embedded-opentype'), /* IE6-IE8 */
+  url(/fonts/DanaYad/DanaYad.woff2) format('woff2'), /* Super Modern Browsers */
+  url(/fonts/DanaYad/DanaYad.ttf) format('truetype'), /* Safari, Android, iOS */
+  url(/fonts/DanaYad/DanaYad.svg) format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: Amentica;
-  src: url(%PUBLIC_URL%/fonts/Amentica/AmaticaSC-Regular.woff) format('woff'), /* Modern Browsers */
-  url(%PUBLIC_URL%/fonts/Amentica/AmaticaSC-Regular.eot) format('embedded-opentype'), /* IE6-IE8 */
-  url(%PUBLIC_URL%/fonts/Amentica/AmaticaSC-Regular.woff2) format('woff2'), /* Super Modern Browsers */
-  url(%PUBLIC_URL%/fonts/Amentica/AmaticaSC-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
-  url(%PUBLIC_URL%/fonts/Amentica/AmaticaSC-Regular.svg) format('svg'); /* Legacy iOS */
+  src: url(/fonts/Amentica/AmaticaSC-Regular.woff) format('woff'), /* Modern Browsers */
+  url(/fonts/Amentica/AmaticaSC-Regular.eot) format('embedded-opentype'), /* IE6-IE8 */
+  url(/fonts/Amentica/AmaticaSC-Regular.woff2) format('woff2'), /* Super Modern Browsers */
+  url(/fonts/Amentica/AmaticaSC-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
+  url(/fonts/Amentica/AmaticaSC-Regular.svg) format('svg'); /* Legacy iOS */
 }
 
 html {
