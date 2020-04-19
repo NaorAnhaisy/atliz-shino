@@ -6,7 +6,6 @@ import { getFish } from "./FishStore.js"
 import { getWine } from "./WineStore.js"
 import { getFrozen } from "./FrozenStore.js"
 import { getSpices } from "./SpiceStore.js"
-import { getCans } from "./CansStore.js"
 
 var products =
     [
@@ -17,7 +16,6 @@ var products =
         { itemName: "דגים", type: "fish", general:"market", getItems: getFish },
         { itemName: "יינות", type: "wine", general:"market", getItems: getWine },
         { itemName: "תבלינים", type: "spices", general:"market", getItems: getSpices },
-        { itemName: "שימורים", type: "cans", general:"market", getItems: getCans },
         { itemName: "קפואים", type: "frozen", general:"market", getItems: getFrozen }
     ]
 
