@@ -72,7 +72,7 @@ function App() {
           : <ItemsGallery itemName={"חיפוש עבור - " + searchText} items={getItemsByText()} />}
       </Container>
       <div className="push"></div>
-      <footer className="footer"><DownNavbar /></footer>
+      <footer className="footer"><DownNavbar setSearchText={setSearchText} /></footer>
     </div>
   );
 }

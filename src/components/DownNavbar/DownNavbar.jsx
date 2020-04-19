@@ -4,6 +4,11 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class DownNavbar extends Component {
+
+    initText = () => {
+        this.props.setSearchText("");
+    }
+
     render() {
         return (
             <Navbar bg="dark" className="down-navbar">
