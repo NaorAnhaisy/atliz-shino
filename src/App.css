@@ -1,5 +1,5 @@
 body {
-  background: url(/images/backgroundImage2.jpg) no-repeat center center fixed;
+  background: url(/images/backgroundImage.jpg) no-repeat center center fixed;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
   padding-right: 40px !important;
   padding-left: 40px !important;
   margin-top: 30px;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 }
 
 @font-face {

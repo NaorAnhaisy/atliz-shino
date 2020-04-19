@@ -32,9 +32,9 @@ class Meats extends Component {
                     <br />
                     <h2>כשרויות מהודרות בהשגחת הרב מחפוד יורה דעה, עטרה בית יוסף והרב רובין.</h2>
                     <h3>בהשגחת רבנות בת-ים</h3>
-                    <img className="kosher-img" src="/images/robin-kosher.png" alt="..." />
-                    <img className="kosher-img" src="/images/atara-kosher.png" alt="..." />
-                    <img className="kosher-img" src="/images/mahfod-kosher.png" alt="..." />
+                    <img className="kosher-img" src="/images/kosher/robin-kosher.png" alt="robinKosher" />
+                    <img className="kosher-img" src="/images/kosher/atara-kosher.png" alt="ataraKosher" />
+                    <img className="kosher-img" src="/images/kosher/mahfod-kosher.png" alt="mahfodKosher" />
                 </div>
                 
                 <div>

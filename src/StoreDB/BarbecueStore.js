@@ -5,12 +5,12 @@ export function getBarbecue() {
         {
             name: "קבב ביתי - בשר טחון ושומן כבש",
             isHot: false,
-            imageUrl: "2https://meatstore.old.accosites.org/wp-content/uploads/2016/11/kabab01.jpg"
+            imageUrl: "/images/uploads/barbecue/meatballs.jpg"
         },
         {
             name: "נקניקיות חריפות (מרגז)",
             isHot: true,
-            imageUrl: "2https://d3m9l0v76dty0.cloudfront.net/system/photos/3966060/large/6d86c57f87273004a4111f41f71f4ad9.jpg"
+            imageUrl: "/images/uploads/barbecue/sausage.jpg"
         },
         {
             name: "המבורגר ביתי - בשר טחון וכבש",

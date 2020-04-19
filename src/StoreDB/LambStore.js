@@ -5,7 +5,7 @@ export function getLamb() {
         {
             name: "צלעות כבש טרי",
             isHot: false,
-            imageUrl: "2https://kazaviabashuk.com/wp-content/uploads/2019/11/%D7%9B%D7%91%D7%A9.jpeg"
+            imageUrl: "/images/uploads/lamb/lamb-ribs.jpg"
         },
         {
             name: "שומן כבש",
@@ -35,7 +35,7 @@ export function getLamb() {
         {
             name: "שוק טלה טרי",
             isHot: false,
-            imageUrl: "2https://d3m9l0v76dty0.cloudfront.net/system/photos/3477988/large/13fdbcceb1e44af5e04db1133efec293.jpg"
+            imageUrl: "/images/uploads/lamb/leg-of-lamb.jpg"
         }
     )
 

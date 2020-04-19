@@ -16,3 +16,9 @@
     display: inline;
     padding: 0;
 }
+
+.about-site-table {
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}

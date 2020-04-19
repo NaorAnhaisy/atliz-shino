@@ -5,12 +5,12 @@ export function getBeef() {
         {
             name: "סטייק אנטריקוט טרי",
             isHot: false,
-            imageUrl: "2https://www.foodisgood.co.il/wp-content/uploads/2017/09/beef-steak.jpg"
+            imageUrl: "/images/uploads/beef/entrecote.jpg"
         },
         {
             name: "סטייק פילה טרי",
             isHot: false,
-            imageUrl: "2https://storage.googleapis.com/sp-public/product-images/1142/2068049/864999/large.jpg"
+            imageUrl: "/images/uploads/beef/fillet.jpg"
         },
         {
             name: "נתח קצבים",
@@ -20,12 +20,12 @@ export function getBeef() {
         {
             name: "פיקאניה טרי",
             isHot: false,
-            imageUrl: "2https://upload.wikimedia.org/wikipedia/commons/9/9e/Picanha3.jpg"
+            imageUrl: "/images/uploads/beef/picania.jpg"
         },
         {
             name: "אנטריקוט פריים רייב על העצם",
             isHot: false,
-            imageUrl: "2https://zuk-farm.co.il/wp-content/uploads/2018/08/222-e1553115952424.jpg"
+            imageUrl: "/images/uploads/beef/prime_rive.jpg"
         },
         {
             name: "סטייק סינטה טרי",
@@ -35,12 +35,12 @@ export function getBeef() {
         {
             name: "אסאדו",
             isHot: false,
-            imageUrl: "2https://d3m9l0v76dty0.cloudfront.net/system/photos/3433484/large/d8f405aa8a27a5a54047b02d0729164a.jpg"
+            imageUrl: "/images/uploads/beef/asado.png"
         },
         {
             name: "בשר טחון טרי",
             isHot: false,
-            imageUrl: "2https://www.easyrecipes.co.il/wp-content/uploads/2015/01/%D7%91%D7%A9%D7%A8-%D7%91%D7%A7%D7%A8-%D7%98%D7%97%D7%95%D7%9F-%D7%9C%D7%94%D7%9E%D7%91%D7%95%D7%A8%D7%92%D7%A8-660x437.jpg"
+            imageUrl: "/images/uploads/beef/basar_tahon.jpg"
         },
         {
             name: "זנב טרי",
@@ -75,7 +75,7 @@ export function getBeef() {
         {
             name: "אוסבוקו עגל",
             isHot: false,
-            imageUrl: "2https://www.meatnet.co.il/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/h/shutterstock_559327555.jpg"
+            imageUrl: "/images/uploads/beef/osbuku.jpg"
         },
         {
             name: "בשר עגל חלבי טרי",

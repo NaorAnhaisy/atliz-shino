@@ -5,7 +5,7 @@ export function getChicken() {
         {
             name: "עוף שלם טרי",
             isHot: false,
-            imageUrl: "2https://m.pricez.co.il/ProductPictures/Pricez69104.jpg"
+            imageUrl: "/images/uploads/chicken/chicken.jpg"
         },
         {
             name: "פרגיות טרי",
@@ -15,12 +15,12 @@ export function getChicken() {
         {
             name: "חזה עוף טרי",
             isHot: false,
-            imageUrl: "2https://img.mako.co.il/2016/06/23/shutterstock_283465517_i.jpg"
+            imageUrl: "/images/uploads/chicken/chicken-breast.jpg"
         },
         {
             name: "כנפיים עוף טרי",
             isHot: false,
-            imageUrl: "2https://m.pricez.co.il/ProductPictures/Pricez65991.jpg"
+            imageUrl: "/images/uploads/chicken/chicken-wings.jpg"
         },
         {
             name: "טחון עוף טרי",
@@ -30,17 +30,17 @@ export function getChicken() {
         {
             name: "כבד עוף טרי",
             isHot: false,
-            imageUrl: "2https://st1.foodsd.co.il/Images/Products/large/QxgPMoa7M5BPxDPj.jpg"
+            imageUrl: "/images/uploads/chicken/chicken-liver.png"
         },
         {
             name: "שוקיים עוף טרי",
             isHot: false,
-            imageUrl: "2https://themeatmarket.co.il/wp-content/uploads/2018/08/18-1.jpg"
+            imageUrl: "/images/uploads/chicken/chicken-calves.jpg"
         },
         {
             name: "כרעיים עוף טרי",
             isHot: false,
-            imageUrl: "2https://cdn.shopify.com/s/files/1/1286/6357/products/feb0194fcb2afffd8c601d26687cc7d2_0d11519a-d585-4e2f-a95f-b961c3c9200e_1024x1024.jpg?v=1503855792"
+            imageUrl: "/images/uploads/chicken/chicken-legs.jpg"
         },
         {
             name: "לבבות עוף טרי",

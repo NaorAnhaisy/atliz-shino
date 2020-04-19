@@ -14,7 +14,6 @@ class ItemsGallery extends Component {
             <div key={item.name} className="col mb-4">
                 <Card>
                     <div className="card-title h2">{item.name}</div>
-                    
                     <div className="images-div">
                         <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="card-img-top" />
                         {item.isHot && <img className="pepper-image" src='/images/hotPepper.png' alt="hotPepper" />}
@@ -26,7 +25,7 @@ class ItemsGallery extends Component {
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
                             <br />
-                            // <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span>
+                            <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span>
                         </Card.Text>
                     </Card.Body> */}
                 </Card>
@@ -45,7 +44,7 @@ class ItemsGallery extends Component {
         if (listItems.length === 0) {
             listItems =
                 <h1 className="no-items-found-error">
-                    <img className="no-items-found-image" src="/images/warning.png" alt="warning" />
+                    <img className="no-items-found-image" src="/images/errorX.png" alt="errorX" />
                     <span> לא נמצאו פריטים תואמים</span>
                 </h1>
         }
@@ -57,9 +56,8 @@ class ItemsGallery extends Component {
         return (
             <>
                 <div className="container">
-                    <h1 className="meats-header">{this.props.itemName ? this.props.itemName : this.props.items.itemName} :</h1>}
-                    <br />
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
+                    <h1 className="meats-header">{this.props.itemName ? this.props.itemName : this.props.items.itemName} :</h1>
+                    <div className="items-gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4">
                         {this.createHTMLItems(this.props.items)}
                     </div>
                 </div>
