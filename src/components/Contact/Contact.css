@@ -8,11 +8,19 @@
     text-decoration: underline;
 }
 
-.address {
-    display: inline-grid;
-}
-
-.contact-phone {
+.place-phone-icon {
     width: 1.5rem;
     margin: 10px;
+}
+
+.phone {
+    color: wheat;
+}
+
+.phone:hover {
+    color: rgb(202, 172, 117);
+}
+
+.place-phone-table {
+    margin: auto;
 }

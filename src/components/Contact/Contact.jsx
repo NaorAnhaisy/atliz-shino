@@ -23,14 +23,32 @@ class Contant extends Component {
             <br />
             <span>* את ההזמנות ניתן לבצע טלפונית או בבית העסק עצמו, ולבקש שיגיע עד לפתח דלתכם *</span>
           </p>
-          <p className="address">
-            <span>רחוב ירושלים 40</span>
-            <span>בת ים</span>
-          </p>
-          <p>
-            <img className="contact-phone" src="/images/contactPhone.png" alt="contactPhone" />
-            <span>טלפון העסק: 03-6585484</span>
-          </p>
+          <table className="place-phone-table">
+            <tbody>
+              <tr>
+                <td>
+                  <img className="place-phone-icon" src="/images/MapPinIcon.png" alt="contactPhone" />
+                </td>
+                <td>
+                  <span>רחוב ירושלים 40</span>
+                  <br />
+                  <span>בת ים</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="tel:03-6585484">
+                    <img className="place-phone-icon" src="/images/contactPhone.png" alt="contactPhone" />
+                  </a>
+                </td>
+                <td>
+                  <a className="phone" href="tel:03-6585484">
+                    <span>טלפון העסק: 03-6585484</span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <br />
           <p className="end-contact">
             <span>בואו עוד היום ונסו את מיטב הבשרים שלנו !</span>
@@ -40,7 +58,6 @@ class Contant extends Component {
       </div>
     )
   }
-
 }
 
 export default Contant;
