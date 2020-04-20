@@ -28,7 +28,7 @@ function App() {
       <Container>
         {searchText === "" ?
           <Switch>
-            <Route path="/" component={Meats} exact />
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Meats} />
             <Route path="/about" component={About} />
             <Route
               path="/meat/beef"
@@ -62,9 +62,7 @@ function App() {
               path="/market/spices"
               render={(props) => <ItemsGallery {...props} items={getProductsOfType("spices")} isPriceForKg={false} />}
             />
-
             <Route path="/contact" component={Contact} />
-
             <Route path="/terms" component={Terms} />
             <Route path="/privacy" component={Privacy} />
 
