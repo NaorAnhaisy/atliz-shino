@@ -16,7 +16,7 @@ class ItemsGallery extends Component {
                     <div className="card-title h2">{item.name}</div>
                     <div className="images-div">
                         <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="card-img-top" />
-                        {item.isHot && <img className="pepper-image" src='/images/hotPepper.png' alt="hotPepper" />}
+                        {item.isHot && <img className="pepper-image pepper-gallery-image" src='/images/hotPepper.png' alt="hotPepper" />}
                     </div>
                     <Card.Body>
                     </Card.Body>

@@ -80,3 +80,7 @@
 .slick-slide img {
     display: inline-block !important;
 }
+
+.pepper-slider-image {
+    height: 6vw;
+}

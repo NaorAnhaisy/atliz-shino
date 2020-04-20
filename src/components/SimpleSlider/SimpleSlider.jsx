@@ -31,7 +31,7 @@ export default class SimpleSlider extends Component {
           <div key={i} className="item-div" onClick={() => this.handleSlideClick(item)}>
             <div className="images-div">
               <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="item-image" />
-              {item.isHot && <img className="pepper-image" src='/images/hotPepper.png' alt="hotPepper" />}
+              {item.isHot && <img className="pepper-image pepper-slider-image" src='/images/hotPepper.png' alt="hotPepper" />}
             </div>
             <h4>{item.name}</h4>
           </div>

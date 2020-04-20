@@ -94,10 +94,13 @@
 
 .pepper-image {
     position: absolute;
-    height: 40px;
     bottom: 0;
     left: 3px;
     z-index: 5;
+}
+
+.pepper-gallery-image {
+    height: 50px;
 }
 
 .items-gallery{
