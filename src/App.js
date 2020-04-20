@@ -28,8 +28,8 @@ function App() {
       <Container>
         {searchText === "" ?
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Meats} />
-            <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
+            <Route exact path="/" component={Meats} />
+            <Route path="/about" component={About} />
             <Route
               path="/meat/beef"
               render={(props) => <ItemsGallery {...props} items={getProductsOfType("beef")} isPriceForKg={true} />}

@@ -101,3 +101,7 @@
     from { width: 24px; }
     to { width: 20px; }
 }
+
+.active {
+    color: aqua;
+}

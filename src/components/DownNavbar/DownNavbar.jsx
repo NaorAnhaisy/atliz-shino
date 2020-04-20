@@ -18,11 +18,11 @@ class DownNavbar extends Component {
                             <td style={{ width: "50%" }} className="my-name">פותח ע"י נאור אנחייסי</td>
                             <td style={{ width: "50%" }} className="copyright-span">
                                 Atliz-Shino and his sons © 2020 - All Rights Reserve.
-                                <Nav.Link className="down-nav-link" onClick={this.initText} as={Link} to="/terms">
+                                <Nav.Link replace className="down-nav-link" onClick={this.initText} as={Link} to="/terms">
                                     <span> Terms </span>
                                 </Nav.Link>
                                 <span> & </span>
-                                <Nav.Link className="down-nav-link" onClick={this.initText} as={Link} to="/privacy">
+                                <Nav.Link replace className="down-nav-link" onClick={this.initText} as={Link} to="/privacy">
                                     <span> Privacy </span>
                                 </Nav.Link>
                             </td>
