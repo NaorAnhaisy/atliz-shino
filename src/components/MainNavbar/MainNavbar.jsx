@@ -86,21 +86,21 @@ class MainNavbar extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
 
           <Nav className="mr-auto-left">
-            <Nav.Link replace name="about" onClick={this.initText} as={Link} to="/about">מי אנחנו</Nav.Link>
-            <NavDropdown title="בשרים " id="basic-nav-dropdown">
+            <Nav.Link className="underline-style" replace name="about" onClick={this.initText} as={Link} to="/about">מי אנחנו</Nav.Link>
+            <NavDropdown title="בשרים " className="underline-style" id="basic-nav-dropdown">
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/beef">בקר</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/lamb">כבש</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/chicken">עופות</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/barbecue">על האש</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="מכולת " id="basic-nav-dropdown">
+            <NavDropdown title="מכולת " className="underline-style" id="basic-nav-dropdown">
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/fish">דגים</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/wine">יינות</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/spices">תבלינים</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/frozen">קפואים</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link replace onClick={this.initText} as={Link} to="/contact">צור קשר</Nav.Link>
+            <Nav.Link className="underline-style" replace onClick={this.initText} as={Link} to="/contact">צור קשר</Nav.Link>
           </Nav>
 
           <Form onSubmit={this.formPreventDefault} inline>
