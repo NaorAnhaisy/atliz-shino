@@ -22,18 +22,18 @@
 
 .item-div:hover {
     animation: changeColor 0.5s forwards;
+    cursor: pointer;
 }
 
 .item-image:hover {
-    cursor: pointer;
     z-index: 4;
 }
 
-.item-div:hover > .images-div > .item-image {
+.item-div:hover > .images-div > .toogle-img-loading > .item-image {
     animation: changeSize 0.5s forwards;
 }
 
-.item-div:not( :hover ) > .images-div > .item-image {
+.item-div:not( :hover ) > .images-div > .toogle-img-loading > .item-image {
     animation: changeSizeOut 0.5s forwards;
 }
 
@@ -83,4 +83,9 @@
 
 .pepper-slider-image {
     height: 6vw;
+}
+
+.round-top {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }

@@ -9,9 +9,13 @@ class Meats extends Component {
         window.scrollTo(0, 0)
     }
 
+    getAllMeats = () => {
+        return getAllProducts().filter(product => product.general === "meat")
+    }
+
     createMeatSliders = () => {
         let slidersElements = []
-        getAllProducts().filter(product => product.general === "meat")
+        this.getAllMeats()
             .forEach((product, i) => {
                 slidersElements.push(
                     <div key={i}>
