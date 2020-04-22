@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MainNavbar.css';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import HoverControlledDropdown from '../HoverControlledDropdown/HoverControlledDropdown'
 import { Link } from 'react-router-dom';
 
 class MainNavbar extends Component {
@@ -12,6 +12,7 @@ class MainNavbar extends Component {
       text: "",
       navBackground: "dark",
       expanded: false,
+      dropdownOpen: false,
       clearTextVisibility: false
     }
 
@@ -87,19 +88,19 @@ class MainNavbar extends Component {
 
           <Nav className="mr-auto-left">
             <Nav.Link className="underline-style" replace onClick={this.initText} as={Link} to="/about">מי אנחנו</Nav.Link>
-            <NavDropdown title="בשרים " className="underline-style" id="basic-nav-dropdown">
+            <HoverControlledDropdown title="בשרים " className="underline-style" id="basic-nav-dropdown">
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/beef">בקר</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/lamb">כבש</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/chicken">עופות</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/barbecue">על האש</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="ועוד " className="underline-style" id="basic-nav-dropdown">
+            </HoverControlledDropdown>
+            <HoverControlledDropdown title="ועוד " className="underline-style" id="basic-nav-dropdown">
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/fish">דגים</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/wine">יינות</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/spices">תבלינים</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/frozen">קפואים</NavDropdown.Item>
-            </NavDropdown>
+            </HoverControlledDropdown>
             <Nav.Link className="underline-style" replace onClick={this.initText} as={Link} to="/contact">צור קשר</Nav.Link>
           </Nav>
 
