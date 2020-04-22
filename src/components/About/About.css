@@ -5,3 +5,7 @@
     text-align: center;
     padding: 8px;
 }
+
+.br-space-after {
+    margin-bottom: .8em;
+}

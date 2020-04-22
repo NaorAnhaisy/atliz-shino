@@ -93,7 +93,7 @@
     width: 80%;
 }
 
-.search-clear-div {
+.search-text-div {
     display: contents;
 }
 
@@ -103,11 +103,11 @@
 }
 
 .clear-img:hover {
-    animation: biggerTheImage 0.5s forwards;
+    animation: biggerTheImage 0.2s forwards;
 }
 
 .clear-img:not(:hover) {
-    animation: smallerTheImage 0.5s forwards;
+    animation: smallerTheImage 0.2s forwards;
 }
 
 @keyframes biggerTheImage {
@@ -118,8 +118,4 @@
 @keyframes smallerTheImage {
     from { width: 24px; }
     to { width: 20px; }
-}
-
-.active {
-    color: aqua;
 }

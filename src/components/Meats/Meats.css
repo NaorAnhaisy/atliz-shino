@@ -15,10 +15,17 @@
     background-color: rgb(165, 42, 42, 0.9);
     border-radius: 20px;
     padding: 10px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
   
 .kosher-img {
     width: 6rem;
     margin: 10px;
+}
+
+.push-meats {
+    height: 15vh;
 }

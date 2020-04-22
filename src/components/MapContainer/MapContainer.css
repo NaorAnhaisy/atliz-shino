@@ -26,3 +26,7 @@
         width: 50vw;
     }
 }
+
+.leaflet-popup-content {
+    text-align: center;
+}

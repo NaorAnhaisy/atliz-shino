@@ -2,16 +2,19 @@ import React, { Component } from 'react';
 import './ItemsGallery.css';
 import { Card } from 'react-bootstrap';
 import ImageWithDefault from '../ImageWithDefault/ImageWithDefault'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class ItemsGallery extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
+        AOS.init();
     }
 
     createCardItem = (item, type) => {
         let cardItem =
-            <div key={item.name} className="col mb-4">
+            <div key={item.name} className="col mb-4" data-aos='flip-down'>
                 <Card>
                     <div className="card-title h2">{item.name}</div>
                     <div className="images-div">
@@ -20,7 +23,7 @@ class ItemsGallery extends Component {
                     </div>
                     <Card.Body>
                     </Card.Body>
-                    
+
                     {/* <Card.Body>
                         <Card.Text>
                             <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
@@ -35,21 +38,22 @@ class ItemsGallery extends Component {
     }
 
     createHTMLItems = (product) => {
-        let listItems = [];
         let items = this.props.itemName ? product : product.getItems();
-        items.forEach(item => {
-            listItems.push(this.createCardItem(item, this.props.itemName ? item.type : product.type));
-        });
+        let htmlItems = [];
 
-        if (listItems.length === 0) {
-            listItems =
+        if (items.length === 0) {
+            htmlItems =
                 <h1 className="no-items-found-error">
                     <img className="no-items-found-image" src="/images/errorX.png" alt="errorX" />
                     <span> לא נמצאו פריטים תואמים</span>
                 </h1>
+        } else {
+            items.forEach(item => {
+                htmlItems.push(this.createCardItem(item, this.props.itemName ? item.type : product.type));
+            });
         }
 
-        return listItems
+        return htmlItems
     }
 
     render() {

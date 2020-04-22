@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import './Meats.css';
 import SimpleSlider from '../SimpleSlider/SimpleSlider'
 import { getAllProducts } from '../../StoreDB/Store.js'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class Meats extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
+        AOS.init();
     }
 
     getAllMeats = () => {
@@ -18,9 +21,9 @@ class Meats extends Component {
         this.getAllMeats()
             .forEach((product, i) => {
                 slidersElements.push(
-                    <div key={i}>
+                    <div key={i} data-aos='fade-up'>
                         <SimpleSlider className="content" product={product} />
-                        <br />
+                        <br/>
                     </div>
                 )
             });
@@ -40,8 +43,9 @@ class Meats extends Component {
                     <img className="kosher-img" src="/images/kosher/atara-kosher.png" alt="ataraKosher" />
                     <img className="kosher-img" src="/images/kosher/mahfod-kosher.png" alt="mahfodKosher" />
                 </div>
-                
+
                 <div>
+                    <div className="push-meats"></div>
                     <h1 className="meats-header">נגיעה, מן המגוון...</h1>
                     {this.createMeatSliders()}
                 </div>

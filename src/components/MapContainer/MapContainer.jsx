@@ -22,7 +22,7 @@ class MapContainer extends React.Component {
         />
         <Marker position={position}>
           <Popup>
-            <span>A pretty CSS3 popup. <br/> Easily customizable.</span>
+            <span>אטליז שינו ובניו. <br/> רחוב ירושלים 40 בת-ים.</span>
           </Popup>
         </Marker>
       </Map>

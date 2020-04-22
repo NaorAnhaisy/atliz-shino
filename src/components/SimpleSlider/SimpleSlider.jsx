@@ -55,7 +55,7 @@ export default class SimpleSlider extends Component {
           <span className="item-name">{this.props.product.itemName}</span>
           <img className="header-icon" src={'/images/default/' + this.props.product.type + '.png'} alt="headerIcon" />
         </h1>
-        <br />
+        <div className="br-space-after"></div>
         <Slider {...settings}>
           {this.createSlides(this.props.product.getItems(), this.props.product.type)}
         </Slider>

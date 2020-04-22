@@ -86,14 +86,14 @@ class MainNavbar extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
 
           <Nav className="mr-auto-left">
-            <Nav.Link className="underline-style" replace name="about" onClick={this.initText} as={Link} to="/about">מי אנחנו</Nav.Link>
+            <Nav.Link className="underline-style" replace onClick={this.initText} as={Link} to="/about">מי אנחנו</Nav.Link>
             <NavDropdown title="בשרים " className="underline-style" id="basic-nav-dropdown">
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/beef">בקר</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/lamb">כבש</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/chicken">עופות</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/meat/barbecue">על האש</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="מכולת " className="underline-style" id="basic-nav-dropdown">
+            <NavDropdown title="ועוד " className="underline-style" id="basic-nav-dropdown">
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/fish">דגים</NavDropdown.Item>
               <NavDropdown.Item replace onClick={this.initText} as={Link} to="/market/wine">יינות</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -104,7 +104,7 @@ class MainNavbar extends Component {
           </Nav>
 
           <Form onSubmit={this.formPreventDefault} inline>
-            <div className="search-clear-div">
+            <div className="search-text-div">
               <img src="/images/clearText.png" alt="clearImg"
                 className="clear-img"
                 style={{ visibility: this.state.clearTextVisibility ? "visible" : "hidden" }}
