@@ -22,3 +22,11 @@
     border-bottom-width: 1px;
     border-bottom-style: dashed;
 }
+
+.my-name-href {
+    color: yellowgreen;
+}
+
+.my-name-href:hover {
+    color: rgb(124, 175, 23);
+}

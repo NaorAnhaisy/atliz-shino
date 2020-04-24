@@ -15,7 +15,7 @@ class DownNavbar extends Component {
                 <table style={{ width: "100%" }}>
                     <tbody className="about-site-table">
                         <tr>
-                            <td style={{ width: "50%" }} className="my-name">פותח ע"י נאור אנחייסי</td>
+                            <td style={{ width: "50%" }} className="my-name">האתר פותח ע"י <a href="https://github.com/NaorAnhaisy" className="my-name-href">נאור אנחייסי</a></td>
                             <td style={{ width: "50%" }} className="copyright-span">
                                 Atliz-Shino and his sons © 2020 - All Rights Reserve.
                                 <Nav.Link replace className="down-nav-link" onClick={this.initText} as={Link} to="/terms">
