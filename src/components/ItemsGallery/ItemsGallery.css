@@ -41,7 +41,8 @@
     text-align: center;
     height: fit-content;
     background-color: aliceblue;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     text-shadow: #000 0 0 2px;
 }
 
