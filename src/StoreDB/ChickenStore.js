@@ -5,7 +5,7 @@ export function getChicken() {
         {
             name: "עוף שלם טרי",
             isHot: false,
-            imageUrl: "/images/uploads/chicken/chicken.jpg"
+            imageUrl: ""
         },
         {
             name: "פרגיות טרי",
@@ -40,7 +40,7 @@ export function getChicken() {
         {
             name: "כרעיים עוף טרי",
             isHot: false,
-            imageUrl: "/images/uploads/chicken/chicken-legs.jpg"
+            imageUrl: ""
         },
         {
             name: "לבבות עוף טרי",

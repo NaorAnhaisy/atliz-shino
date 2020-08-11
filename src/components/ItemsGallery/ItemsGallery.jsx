@@ -9,7 +9,9 @@ class ItemsGallery extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-        AOS.init();
+        AOS.init({
+            once: true
+        });
     }
 
     createCardItem = (item, type) => {
@@ -21,16 +23,6 @@ class ItemsGallery extends Component {
                         <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="card-img-top" />
                         {item.isHot && <img className="pepper-image pepper-gallery-image" src='/images/hotPepper.png' alt="hotPepper" />}
                     </div>
-                    <Card.Body>
-                    </Card.Body>
-
-                    {/* <Card.Body>
-                        <Card.Text>
-                            <span><span className="prop-header">כשרות:</span> {item.kosher}</span>
-                            <br />
-                            <span><span className="prop-header">מחיר ל{this.props.isPriceForKg ? "ק\"ג" : "יחידה"}:</span> {item.price} ₪</span>
-                        </Card.Text>
-                    </Card.Body> */}
                 </Card>
             </div>
 

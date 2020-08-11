@@ -1,25 +1,44 @@
-@media (max-width: 576px) {  
-    .xs {color:red;font-weight:bold;}
-  }
-  
+@media (max-width: 576px) {
+    .xs {
+        color: red;
+        font-weight: bold;
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width:768px) {  
-    .sm {color:red;font-weight:bold;}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .sm {
+        color: red;
+        font-weight: bold;
+    }
 }
-   
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width:992px) {  
-    .md {color:red;font-weight:bold;}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .md {
+        color: red;
+        font-weight: bold;
+    }
 }
-   
+
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1200px) { 
-    .lg {color:red;font-weight:bold;}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .lg {
+        color: red;
+        font-weight: bold;
+    }
 }
-   
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    .xl {color:red;font-weight:bold;}
+
+@media (min-width: 1200px) {
+    .xl {
+        color: red;
+        font-weight: bold;
+    }
 }
 
 .no-items-found-error {
@@ -37,7 +56,7 @@
 }
 
 .card-title {
-    padding: 3px;
+    padding: 10px;
     text-align: center;
     height: fit-content;
     background-color: aliceblue;
@@ -55,6 +74,11 @@
 
 .card-img, .card-img-top {
     height: 200px;
+}
+
+.card-img-top {
+    border-bottom-right-radius: 14%;
+    border-bottom-left-radius: 14%;
 }
 
 .prop-header {
@@ -75,13 +99,21 @@
 }
 
 @keyframes changeColorIn {
-    from { color: black; }
-    to { color: brown; }
+    from {
+        color: black;
+    }
+    to {
+        color: brown;
+    }
 }
 
 @keyframes changeColorOut {
-    from { color: brown; }
-    to { color: black; }
+    from {
+        color: brown;
+    }
+    to {
+        color: black;
+    }
 }
 
 .images-div {
@@ -104,6 +136,6 @@
     height: 50px;
 }
 
-.items-gallery{
+.items-gallery {
     margin-top: 30px;
 }

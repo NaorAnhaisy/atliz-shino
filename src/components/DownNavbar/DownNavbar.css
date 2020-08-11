@@ -15,12 +15,17 @@
     font-size: medium;
     display: inline;
     padding: 0;
+    transition: all .4s;
+}
+
+.down-nav-link:hover {
+    text-decoration: none;
 }
 
 .about-site-table {
-    border-bottom-color: white;
+    /* border-bottom-color: white;
     border-bottom-width: 1px;
-    border-bottom-style: dashed;
+    border-bottom-style: dashed; */
 }
 
 .my-name-href {

@@ -29,27 +29,51 @@
     z-index: 4;
 }
 
-.item-div:hover > .images-div > .toogle-img-loading > .item-image {
+.item-div:hover>.images-div>.toogle-img-loading>.item-image {
     animation: changeSize 0.5s forwards;
 }
 
-.item-div:not( :hover ) > .images-div > .toogle-img-loading > .item-image {
+.item-div:not( :hover)>.images-div>.toogle-img-loading>.item-image {
     animation: changeSizeOut 0.5s forwards;
 }
 
 @keyframes changeColor {
-    from {color: black;}
-    to {color: gold;}
+    from {
+        color: black;
+    }
+    to {
+        color: gold;
+    }
 }
 
 @keyframes changeSize {
-    from { max-width: 25vw; max-height: 20vw; width: 25vw; height: 20vw;}
-    to { max-width: 28vw; max-height: 22vw; width: 28vw; height: 22vw;}
+    from {
+        max-width: 25vw;
+        max-height: 20vw;
+        width: 25vw;
+        height: 20vw;
+    }
+    to {
+        max-width: 28vw;
+        max-height: 22vw;
+        width: 28vw;
+        height: 22vw;
+    }
 }
 
 @keyframes changeSizeOut {
-    from { max-width: 28vw; max-height: 22vw; width: 28vw; height: 22vw;}
-    to { max-width: 25vw; max-height: 20vw; width: 25vw; height: 20vw;}
+    from {
+        max-width: 28vw;
+        max-height: 22vw;
+        width: 28vw;
+        height: 22vw;
+    }
+    to {
+        max-width: 25vw;
+        max-height: 20vw;
+        width: 25vw;
+        height: 20vw;
+    }
 }
 
 .slick-prev:before, .slick-next:before {
@@ -87,4 +111,10 @@
 .round-top {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.slider-image-item {
+    width: 100%;
+    max-height: 300px;
+    padding: 10px;
 }

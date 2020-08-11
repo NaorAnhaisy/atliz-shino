@@ -9,7 +9,9 @@ class Meats extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0)
-        AOS.init();
+        AOS.init({
+            once: true
+        });
     }
 
     getAllMeats = () => {
@@ -23,7 +25,7 @@ class Meats extends Component {
                 slidersElements.push(
                     <div key={i} data-aos='fade-up'>
                         <SimpleSlider className="content" product={product} />
-                        <br/>
+                        <br />
                     </div>
                 )
             });

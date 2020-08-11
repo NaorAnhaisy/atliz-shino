@@ -28,11 +28,8 @@ export default class SimpleSlider extends Component {
     itemsArray.forEach((item, i) => {
       slides.push
         (
-          <div key={i} className="item-div" onClick={() => this.handleSlideClick(item)}>
-            <div className="images-div">
-              <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="item-image" />
-              {item.isHot && <img className="pepper-image pepper-slider-image" src='/images/hotPepper.png' alt="hotPepper" />}
-            </div>
+          <div key={i} onClick={() => this.handleSlideClick(item)}>
+            <ImageWithDefault src={item.imageUrl} default={'/images/default/' + type + '.png'} clsName="slider-image-item" />
             <h4>{item.name}</h4>
           </div>
         )

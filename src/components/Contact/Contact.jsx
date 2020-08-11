@@ -27,12 +27,16 @@ class Contant extends Component {
             <tbody>
               <tr>
                 <td>
-                  <img className="place-phone-icon" src="/images/MapPinIcon.png" alt="contactPhone" />
+                  <a href="https://www.google.com/maps/place/%D7%90%D7%98%D7%9C%D7%99%D7%96+%D7%A9%D7%99%D7%A0%D7%95+%D7%95%D7%91%D7%A0%D7%99%D7%95+-+%D7%9E%D7%A8%D7%9B%D7%96+%D7%94%D7%91%D7%A9%D7%A8+%D7%94%D7%97%D7%9C%D7%A7%E2%80%AD/@32.0258858,34.7508197,17z/data=!3m1!4b1!4m5!3m4!1s0x1502b33ed1b34ae5:0x4da34c4241f150c!8m2!3d32.0258813!4d34.7486364">
+                    <img className="place-phone-icon" src="/images/MapPinIcon.png" alt="contactPhone" />
+                  </a>
                 </td>
                 <td>
-                  <span>רחוב ירושלים 40</span>
-                  <br />
-                  <span>בת ים</span>
+                  <a className="place-phone-href" href="https://www.google.com/maps/place/%D7%90%D7%98%D7%9C%D7%99%D7%96+%D7%A9%D7%99%D7%A0%D7%95+%D7%95%D7%91%D7%A0%D7%99%D7%95+-+%D7%9E%D7%A8%D7%9B%D7%96+%D7%94%D7%91%D7%A9%D7%A8+%D7%94%D7%97%D7%9C%D7%A7%E2%80%AD/@32.0258858,34.7508197,17z/data=!3m1!4b1!4m5!3m4!1s0x1502b33ed1b34ae5:0x4da34c4241f150c!8m2!3d32.0258813!4d34.7486364">
+                    <span>רחוב ירושלים 40</span>
+                    <br />
+                    <span>בת ים</span>
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -42,7 +46,7 @@ class Contant extends Component {
                   </a>
                 </td>
                 <td>
-                  <a className="phone" href="tel:03-6585484">
+                  <a className="place-phone-href" href="tel:03-6585484">
                     <span>טלפון העסק: 03-6585484</span>
                   </a>
                 </td>

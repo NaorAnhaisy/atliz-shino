@@ -5,7 +5,7 @@ export function getBarbecue() {
         {
             name: "קבב ביתי - בשר טחון ושומן כבש",
             isHot: false,
-            imageUrl: "/images/uploads/barbecue/meatballs.jpg"
+            imageUrl: ""
         },
         {
             name: "נקניקיות חריפות (מרגז)",

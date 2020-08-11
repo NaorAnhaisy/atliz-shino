@@ -72,7 +72,6 @@ class MainNavbar extends Component {
     return (
       <Navbar
         expanded={this.state.expanded}
-        bg={this.state.navBackground}
         variant={this.state.navBackground}
         className={this.state.navBackground === "dark" ? "darkCls" : "lightCls"}
         expand="lg"

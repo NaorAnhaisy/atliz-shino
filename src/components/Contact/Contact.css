@@ -13,11 +13,13 @@
     margin: 10px;
 }
 
-.phone {
+.place-phone-href {
     color: wheat;
+    transition: all .4s;
 }
 
-.phone:hover {
+.place-phone-href:hover {
+    text-decoration: none;
     color: rgb(202, 172, 117);
 }
 
